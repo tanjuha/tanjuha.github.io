@@ -1,0 +1,326 @@
+:root{
+    --colorDesign: linear-gradient(to right, #009FFF, #ec2F4B);
+    --colorText: #fff;
+}
+
+body{
+    margin:0;
+}
+.container{
+    display: flex;
+}
+/*first block 'Me'*/
+.blockFirst{
+    position: relative;
+    height:279px;
+    width:100%;
+    transform: skewY(5deg);
+    background: var(--colorDesign);
+    bottom:82px;
+}
+/*photo*/
+.photo {
+    position: relative;
+    bottom: 220px;
+    display: block;
+    margin-left: 35%;
+}
+.frameFirst{
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    background: #ffffff;
+    padding: 4px;
+    margin:0;
+}
+.frameFirst > img{
+    border-radius: 50%;
+}
+.frameSecond{
+    border-radius: 50% ;
+    display: inline-block;
+    padding: 4px;
+    background:  -webkit-linear-gradient(left top, #ec2F4B 0%, #009FFF 100%);
+
+}
+.frameLast{
+    height: 216%;
+    width: 216px;
+    border-radius:50%;
+    background: #ffffff;
+    display: inline-block;
+    padding:4px;
+    margin:0;
+}
+/*photo end*/
+/*text firstBlock*/
+.tanya, .kovalenko{
+    color: var(--colorText);
+    position: absolute;
+    bottom: 240px;
+    transform: skewY(5deg);
+    font-family: "Mistral", sans-serif;
+    font-size: 48px;
+}
+.tanya{
+   left:22%;
+    top:40px;
+}
+.kovalenko{
+    left:56%;
+    top:89px;
+
+}
+/*text firstBlock end*/
+/*text firstBlock end*/
+
+/*icon*/
+.frameFirstIcon > span{
+    border-radius: 50%;
+}
+i{
+    font-size: 85px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ec2F4B), to(#009FFF));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.frameFirstIcon{
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+    background: #ffffff;
+    padding: 4px;
+    margin:0;
+}
+.frameSecondIcon{
+    border-radius: 50% ;
+    display: inline-block;
+    padding: 4px;
+    background:  -webkit-linear-gradient(left top, crimson 0%, #009FFF 100%);
+}
+.frameLastIcon{
+    height: 116%;
+    width: 116px;
+    border-radius:50%;
+    background: #ffffff;
+    display: inline-block;
+    padding:4px;
+    margin:0;
+}
+.box01,.box11,.box012,.box31,.box32{
+    display: block;
+    position: relative;
+}
+.box01, .box21{
+    transform: skewY(5deg);
+}
+.box11{
+    transform: skewY(-5deg);
+}
+.fa-info{
+    font-size: 70px;
+    position: relative;
+    padding:36px;
+    top:-18px;
+}
+.fa-address-card{
+    font-size: 70px;
+    position: relative;
+    padding:10px;
+    top:4px;
+}
+.fa-user{
+    position: relative;
+    bottom: -2px;
+    left:13px;
+}
+.fa-github-alt{
+    position: relative;
+    bottom: -4px;
+    left:11px;
+}
+.fa-facebook-f{
+    position: relative;
+    font-size: 80px;
+    bottom: -9px;
+    left:29px;
+}
+/*icon end*/
+/*main text*/
+h4{
+    font-family: "Mistral", sans-serif;
+}
+ h5,p,h6{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Bigger Love DEMO",cursive;
+}
+span{
+    color:white;
+    font-size: 28px;
+    font-family:  "Bigger Love DEMO",cursive;
+}
+h5{
+    font-size: 28px;
+}
+p{
+    font-size: 20px;
+}
+h4{
+    position:relative;
+    color:#ffffff;
+    font-size: 40px;
+
+}
+h4:before,
+h4:after{
+    position: absolute;
+    content:"";
+    background-color: #fff;
+    height:5px;
+    width:100px;
+    top:50%;
+    border-radius: 100px;
+    transform: translateY(-50%); /*center border*/
+    margin: 0 30px 0 30px;
+}
+h4:before{
+    right: 100%;
+}
+h4:after{
+    left:100%;
+}
+.container{
+    display: flex;
+    /*flex-direction: column; @media*/
+    justify-content: space-around;
+    align-items: center;
+}
+.containerResumeInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 200px;
+}
+.item-Skill{
+    align-self: flex-end;
+}
+.box23{
+    position: relative;
+    width: 400px;
+}
+/*main text end*/
+/*info block*/
+.info{
+    height:270px;
+    width:100%;
+    position: relative;
+    transform: skewY(-5deg);
+    background: var(--colorDesign);
+    bottom: 188px;
+}
+
+/*info block end*/
+/*resume box*/
+.resume{
+    height:270px;
+    width:100%;
+    position: relative;
+    transform: skewY(5deg);
+    background: var(--colorDesign);
+    bottom: 70px;
+    flex-direction: row-reverse;
+}
+
+/*resume box end*/
+.aboutMe{
+    height:270px;
+    width:100%;
+    position: relative;
+    transform: skewY(-5deg);
+    background: var(--colorDesign);
+    bottom: -48px;
+}
+.links{
+    height:270px;
+    width:100%;
+    position: relative;
+    background: var(--colorDesign);
+    bottom: -107px;
+    justify-content: center;
+}
+.linksLine{
+    width: 60px;
+    height:5px;
+    background: #fff;
+    border-radius: 100px;
+    margin:0 50px 0 50px;
+}
+
+.box31:before,
+.box32:after{
+    position: absolute;
+    content: '';
+    background: #fff;
+    height: 5px;
+    border-radius: 100px;
+    top:50%;
+    width:150px;
+}
+.box31:before{
+    right: 100%;
+    margin-right: 30px;
+}
+.box32:after{
+    left:100%;
+    margin-left:30px;
+}
+.containerlinckGitFace{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    top:31px;
+}
+.git{
+    position: relative;
+    left:155px;
+}
+.face{
+    position: relative;
+    right:244px;
+}
+
+.git > span:nth-child(2), .face > span:nth-child(2){
+    position:absolute;
+    height:2px;
+    width:86px;
+    background: #fff;
+    transform: skewY(-18deg);
+    border-radius: 100px;
+
+}
+.git > span:nth-child(2){
+    top:23px;
+    left:36px;
+}
+.face > span:nth-child(2){
+    top:24px;
+    left:56px;
+}
+
+.git > span:nth-child(3), .face > span:nth-child(3){
+    position: absolute;
+}
+.git > span:nth-child(3){
+    top:24px;
+    left:76px;
+}
+.face > span:nth-child(3){
+    top:19px;
+    left:100px;
+}
+.git > span, .face > span{
+   font-size: 20px;
+}
