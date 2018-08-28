@@ -1,11 +1,4 @@
 @media screen and (max-width:992px){
-    h3{
-        font-size: 30pt;
-    }
-    h4{
-        font-size: 17pt;
-        margin-bottom: 15px;
-    }
     /*header 992px*/
     .header{
         flex-direction: column;
@@ -78,13 +71,9 @@
     .professional-services{
         height: auto;
         margin: 40px 0 40px 0;
-
     }
     .professional-services > h3{
         margin: 0;
-    }
-    .professional-services > p{
-        font-size: 15pt;
     }
     .icon-professional-services{
         flex-direction: column;
@@ -105,9 +94,6 @@
     }
     .heart{
         margin-top: 0;
-    }
-    .icon>p{
-        font-size: 12pt;
     }
     /*professional service end 992px*/
     /*just relax 992px*/
@@ -140,14 +126,9 @@
     }
     .just-relax-title > h3{
         text-align: center;
-        font-size: 23pt;
     }
     .just-relax-info > p{
         text-align: center;
-        font-size: 13pt;
-    }
-    .check-box{
-        font-size: 15pt;
     }
     /*just relax end 992px*/
     /*latest project 992px*/
@@ -157,12 +138,6 @@
     .latest-project{
         height: auto;
         margin: 40px 0 40px 0;
-    }
-    .latest-project > h3{
-        margin-top: 60px;
-    }
-    .latest-project > p{
-        margin-top: 15px;
     }
     .later-project-container{
         margin: 0;
@@ -229,20 +204,12 @@
     .our-awesome-clients-title > h3{
         text-align: center;
     }
-    .our-awesome-clients-title > p{
-        font-size:15pt;
-    }
     .quote{
-        font-size: 14pt;
         width:auto;
     }
-    .author{
-        font-size: 13pt;
-    }
-    /*our awesome clients end 992*/
+   /*our awesome clients end 992*/
     /*contact us 992*/
     .btn-lik-contact-us{
-        font-size: 14pt;
         padding: 9px;
     }
     /*contact us end 992*/
@@ -279,19 +246,8 @@
         margin: 0;
     }
     /*top footer end 992*/
-    /*footer 992*/
-    .social > span{
-        font-size: 11pt;
-    }
-    /*footer end 992*/
 }
 @media screen and (max-width:576px){
-    h3{
-        font-size: 25pt;
-    }
-    h4{
-        font-size: 18pt;
-    }
     /*header 576px*/
     .logo > a{
         display: none;
@@ -304,51 +260,17 @@
     .creative-digital-solution {
         height: 350px;
     }
-    .creative-digital-solution > h2{
-        font-size: 25pt;
-    }
-    .creative-digital-solution > p{
-        font-size: 11pt;
-    }
     /*Creative Digital Solutions end*/
     /*button 576px*/
     .btn-lik{
-        font-size: 10pt;
         padding:  13px 23px 13px 23px;
     }
     /*button end*/
-    /*professional service 576px*/
-    .icon>p{
-        font-size: 11pt;
-    }
-    /*professional service end 576px*/
-    /*just relax end 576px*/
-    .check-box{
-        font-size: 13pt;
-    }
-    /*just relax end 576px*/
-    /*latest project 576px*/
-    .latest-project > p{
-        font-size: 14pt;
-    }
-    /*latest project end 576px*/
+
     /*culture values 576px*/
     .culture-values-blocks-title > p{
-        font-size: 14pt;
         margin-top: 10px;
     }
     /*culture values end 576px*/
-    /*our awesome clients 576*/
-    .our-awesome-clients-title > p{
-        font-size:14pt;
-    }
-    .quote{
-        font-size: 13pt;
-    }
-    .author{
-        font-size: 12pt;
-    }
-    /*our awesome clients end 576*/
-    /*contact us 576*/
-    /*contact us end 576*/
+
 }
