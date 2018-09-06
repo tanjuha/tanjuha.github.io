@@ -387,14 +387,15 @@
     /*top footer 992*/
     .top-footer{
         /*height:100vh;*/
+        width: 100vw;
         flex-direction: column;
         align-items: center;
-        padding: 7vh 0 7vh 0;
+        padding: 7vh 0 7vh 3vh;
     }
     .icon-footer-top{
-        font-size:  20px;
-        top: 8vh;
-        left:-6vw;
+        font-size:  4vh;
+        top: 3.8vh;
+        left:-7vw;
     }
     /*.latest-posts {*/
         /*margin-left: 10vw;*/
@@ -403,12 +404,13 @@
         flex-direction: row;
     }
     .contact-us{
-        align-self: flex-start;
+        align-self: center;
     }
+
     .contact-us > li:nth-child(1),
     .latest-posts > li:nth-child(1),
     .latest-tweeter > li:nth-child(1){
-        /*text-align: center;*/
+        text-align: center;
     }
     .top-footer>ul>li:nth-child(1){
         font-size: 6vw;
@@ -417,7 +419,7 @@
         font-size: 4vw;
     }
     .top-footer >ul{
-        margin:0 0 5vh 0;
+        margin:5vh 2vw 5vh 2vw;
     }
     .top-footer> ul:nth-child(3)
     {
