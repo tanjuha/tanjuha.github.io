@@ -437,36 +437,7 @@
     /*top footer end 992*/
     /*footer 992*/
     .footer > span{
-        font-size: 1.7vw;
-    }
-    .social{
-       flex-direction: row;
-        margin-top: 65px;
-    }
-    .social > li:nth-child(2){
-        margin-right: -30px;
-    }
-    .social > li:nth-child(4){
-        margin-left: -4px;
-    }
-    .social > li > i{
-        font-size: 25px;
-
-    }
-    .social > li:before{
-        height: 60px;
-        width: 60px;
-        top: -19px;
-        left: 28px;
-    }
-    .social > li:nth-child(3){
-        margin-left: 13px;
-    }
-    .social > li:nth-child(4){
-        left:19px
-    }
-    .google{
-        left:-7px;
+        font-size: 5vw;
     }
     /*footer end 992*/
 }
