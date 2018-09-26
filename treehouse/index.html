@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/@media-style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jQuerySmoothScrollingAnchorNavigation.js"></script>
 </head>
 <body>
 <div class="header">
@@ -14,21 +16,21 @@
         <div onclick="responsiveFunctionNavBar()" class="menu-hamburger"><a href="#" class="hamburger"><span></span></a></div>
         <ul class="m-menu" id="m-menu">
             <li>
-                <a href="#home"  onclick="responsiveLink()">home</a>
+                <a href="#home"  onclick="responsiveFunctionNavBar()">home</a>
             </li>
             <li>
-                <a href="#about" onclick="responsiveLink()">about</a>
+                <a href="#about" onclick="responsiveFunctionNavBar()">about</a>
             </li>
             <li>
-                <a href="#blog" onclick="responsiveLink()" >blog</a>
+                <a href="#blog" onclick="responsiveFunctionNavBar()" >blog</a>
             </li>
             <li>
-                <a href="#portfolio"  onclick="responsiveLink()">portfolio</a>
+                <a href="#portfolio"  onclick="responsiveFunctionNavBar()">portfolio</a>
             </li>
             <li>
-                <a href="#resume"  onclick="responsiveLink()">resume</a>
+                <a href="#resume"  onclick="responsiveFunctionNavBar()">resume</a>
             </li>
-            <li><a href="#contact"  onclick="responsiveLink()">contact</a></li>
+            <li><a href="#contact"  onclick="responsiveFunctionNavBar()">contact</a></li>
         </ul>
     </div>
     <div class="menu-block">
@@ -58,8 +60,8 @@
     <p>Proin iaculis purus consequat sem cure.</p>
     <a href="#" class="btn-lik btn-lik-view-portfolio">view portfolio</a>
 </div>
-
-<div class="professional-services"  id="about" >
+<div id="about"></div>
+<div class="professional-services"  >
     <h3>Professional services</h3>
     <p>Proin iaculis purus consequat sem cure </p>
     <div class="icon-professional-services">
@@ -148,7 +150,7 @@
                     </p>
                 </div>
             </li>
-            <li >
+            <li>
                 <img class="icon-later-project" src="img/icon-locked.png" alt="">
                 <div class="later-project-li-text">
                     <h4>Secure Encryption</h4>
@@ -214,7 +216,7 @@
         </p>
     </div>
     <div class="our-awesome-clients-quote-container">
-        <div class="empty-circle"></div>
+        <div class="empty-circle personFirst"></div>
         <div class="quote-container">
             <p class="quote">
                 “ Proin iaculis purus consequat sem cure  digni ssim
@@ -226,7 +228,7 @@
         </div>
     </div>
     <div class="our-awesome-clients-quote-container quote-container-second">
-        <div class="empty-circle empty-circle-second"></div>
+        <div class="empty-circle empty-circle-second personSecond"></div>
         <div class="quote-container culture-values-blocks-quote ">
             <p class="quote">
                 “ Proin iaculis purus consequat sem cure  digni ssim
@@ -263,9 +265,9 @@
         <li>
             (416) 555-5252
         </li>
-        <i class="fas fa-envelope icon-footer-top"></i>
+        <a href="#"><i class="fas fa-envelope icon-footer-top"></i></a>
         <li>
-            hello@treehouse.com
+            <a href="mailto:hello@treehouse.com">hello@treehouse.com</a>
         </li>
     </ul>
     <ul class="latest-posts">
@@ -274,23 +276,23 @@
         </li>
         <i class="far fa-file-alt icon-footer-top"></i>
         <li>
-            Made With Love In Toronto
+            <a href="#"> Made With Love In Toronto</a>
         </li>
         <i class="far fa-image icon-footer-top"></i>
         <li>
-            Startup News & Emerging Tech
+            <a href="#"> Startup News & Emerging Tech</a>
         </li>
         <i class="far fa-file-alt icon-footer-top"></i>
         <li>
-            Bitcoin Will Soon Rule The World
+            <a href="#">Bitcoin Will Soon Rule The World</a>
         </li>
         <i class="far fa-file-alt icon-footer-top"></i>
         <li>
-            Wearable Technology On The Rise
+            <a href="#">Wearable Technology On The Rise</a>
         </li>
         <i class="fas fa-play icon-footer-top"></i>
         <li>
-            Learn Web Design In 30 Days!
+            <a href="#">Learn Web Design In 30 Days!</a>
         </li>
     </ul>
     <ul class="latest-tweeter">
@@ -299,19 +301,19 @@
         </li>
         <i class="fab fa-twitter icon-footer-top"></i>
         <li>
-            <span>
+            <a href="#">  <span>
             Confucius: Life is really simple,
             but we insist on making it
             complicated.
-            </span>
+            </span></a>
             #famousquotes <br>
             8 mins ago
         </li>
         <i class="fab fa-twitter icon-footer-top"></i>
         <li>
-            <span>
+            <a href="#"> <span>
             Grab the Free Treehouse web template at FreebiesXpress!
-            </span>
+            </span></a>
             #freebies #templates <br>
             2 days ago
         </li>
@@ -323,16 +325,16 @@
     </span>
     <ul class="social">
         <li>
-            <i class="fab fa-twitter icon-footer-twitter twitter"></i>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter icon-footer-twitter twitter"></i></a>
         </li>
         <li>
-            <i class="fab fa-facebook-f icon-footer-facebook facebook"></i>
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f icon-footer-facebook facebook"></i></a>
         </li>
         <li>
-            <i class="fab fa-pinterest-p icon-footer-pinterest pinterest"></i>
+            <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p icon-footer-pinterest pinterest"></i></a>
         </li>
         <li>
-            <i class="fab fa-google-plus-g icon-footer-google google"></i>
+            <a href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g icon-footer-google google"></i></a>
         </li>
     </ul>
 </div>

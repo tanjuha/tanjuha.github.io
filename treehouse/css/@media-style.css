@@ -43,20 +43,6 @@
         background: #555;
         top: 15px  ;
     }
-    /*.hamburger:hover:after{*/
-        /*transition: all 0.5s;*/
-        /*transform: rotate(45deg);*/
-        /*top:0;*/
-    /*}*/
-    /*.hamburger:hover:before{*/
-        /*transition: all 0.5s;*/
-        /*transform: rotate(-45deg);*/
-        /*top:0;*/
-    /*}*/
-    /*.hamburger:hover{*/
-        /*background: #fff;*/
-    /*}*/
-    /*hamburger*/
     .m-menu {
       display: none;
       list-style: none;
@@ -78,21 +64,6 @@
         font-weight: bold;
         position: relative;
     }
-    /*.m-menu > li >a:before{*/
-        /*position:absolute;*/
-        /*content: "";*/
-        /*background: #222;*/
-        /*height:3px;*/
-        /*width: 0;*/
-        /*top: 4.5rem;*/
-        /*transition: all 0.5s;*/
-    /*}*/
-    /*.m-menu > li > a:hover{*/
-        /*color:#222;*/
-    /*}*/
-    /*.m-menu > li > a:hover::before{*/
-        /*width: 100%;*/
-    /*}*/
 
     /*header end*/
     /*Creative Digital Solutions 992px*/
@@ -205,7 +176,7 @@
         font-size: 6vw;
     }
     .check-box{
-        /*text-align: start;*/
+
         font-size: 6vw;
         margin: 40px 0 110px 0;
     }
@@ -395,7 +366,7 @@
     .icon-footer-top{
         font-size:  4vh;
         top: 3.8vh;
-        left:-7vw;
+        left:-8vw;
     }
     /*.latest-posts {*/
         /*margin-left: 10vw;*/
