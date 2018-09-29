@@ -1,0 +1,272 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+ul, li{
+    margin: 0;
+
+}
+/*nav*/
+nav{
+    width: 100%;
+    height: auto;
+    top:0;
+}
+/*hamburger*/
+.navBarTop{
+    background: #fff;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.navBarTop > div{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    height: 100%;
+    margin: 35px;
+}
+.menu-hamburger{
+    position: relative;
+    content:"";
+    border-radius: 10px;
+    width: 20px;
+    height: 3px;
+    background: #1d2939;
+    cursor: pointer;
+}
+.menu-hamburger:before{
+    position: absolute;
+    content:"";
+    width: 20px;
+    height: 3px;
+    border-radius: 10px;
+    background: #1d2939;
+    top: -6px ;
+}
+.menu-hamburger:after{
+    position: absolute;
+    content:"";
+    width: 20px;
+    border-radius: 10px;
+    height: 3px;
+    background: #1d2939;
+    top: 6px ;
+}
+/*hamburger end*/
+/*search*/
+.search{
+    position: relative;
+    border: none ;
+    outline: none;
+    font-size: 15px;
+    width: 90px;
+}
+.searchButton{
+    border: 0;
+    background: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    height: 100%;
+    border-right: 2px solid #1d2939 ;
+    border-left: 2px solid #1d2939 ;
+    padding: 0 20px 0 20px;
+    margin-left: 35px;
+}
+/*search end*/
+/*logo*/
+.logo{
+    align-items: center;
+}
+.logoIcon{
+    position: relative;
+    text-decoration: none;
+}
+.logoText{
+    color:#1d2939;
+    font-size: 18px;
+    position: relative;
+    top:-9px;
+}
+/*logo end*/
+/*menu bar*/
+.menuBar{
+    float: left;
+    position: relative;
+    background: #1d2939;
+    width: 92px;
+    margin-right: 30px;
+}
+.menuBar >ul{
+    padding: 30px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuBar >ul >li {
+    position: relative;
+    padding-top: 40px;
+    list-style-type: none;
+   }
+.menuBar >ul >li > a{
+    position: relative;
+}
+/*menu bar end*/
+/*nav end*/
+/*container*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+    margin: 30px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    margin: 1px;
+}
+/* box 1 container*/
+.boxLike{
+    margin: 4px 0 2px 4px;
+}
+.boxLike > .box:nth-child(2){
+    margin: 2px 0 2px 1px;
+}
+/*box 2 container*/
+.boxImage > img{
+    width: 145px;
+    height: 100px;
+    margin: 5px 0px 1px 1px ;
+}
+/*box 3 description*/
+.boxDescription{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 102px;
+    margin: 4px 0 1px 1px;
+}
+/*box 4 container*/
+.boxGeneral{
+    margin: 3px 0 0 0 ;
+}
+.contentBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 30px;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    margin: 2px 0 2px 1px;
+}
+/*box 5 container*/
+/*box in box 5*/
+.informationBoxContent{
+    display: flex;
+    flex-direction: row;
+}
+.informationBoxIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dddddd;
+    margin: 2px 0 0 2px;
+}
+.infoContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    height: 64px;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    margin: 5px 0 0 2px;
+}
+.infoIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    background: #fafafa;
+}
+.infoIcon > svg{
+    position: relative;
+    left:-7px;
+}
+.infoIcon:nth-child(2) > svg{
+    left:-18px;
+}
+.infoIcon:nth-child(3) > svg{
+    left:-20px;
+}
+.infoIcon:nth-child(4) > svg{
+    left:-16px;
+}
+/*box 6 container*/
+.dateBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 64px;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    margin: 5px 0 0 2px;
+}
+.codeBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    background: #dddddd;
+    margin: 2px 1px 0 2px;
+}
+/*box 7 container*/
+.boxName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    min-width: 200px;
+    height: 30px;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    margin: 5px 1px 0 1px;
+}
+.detailsGeneral > span{
+    padding: 3px;
+}
+/*box 8 container*/
+.boxDetailsMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 72px;
+    margin-top:4px;
+
+}
+/*container end*/
