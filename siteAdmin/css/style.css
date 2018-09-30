@@ -3,14 +3,26 @@ body{
     padding: 0;
     background: #fafafa;
 }
+
+
+span{
+    font-size: 14px;
+}
+label{
+    font-size: 12px;
+}
+h3{
+    font-size: 14px;
+    color: #8d929b;
+}
 ul, li{
     margin: 0;
 
 }
 /*nav*/
 nav{
+    position: relative;
     width: 100%;
-    height: auto;
     top:0;
 }
 /*hamburger*/
@@ -100,8 +112,7 @@ form{
 /*logo end*/
 /*menu bar*/
 .menuBar{
-    float: left;
-    position: relative;
+     float: left;
     background: #1d2939;
     width: 92px;
     margin-right: 30px;
@@ -111,6 +122,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 .menuBar >ul >li {
     position: relative;
@@ -122,6 +134,9 @@ form{
 }
 /*menu bar end*/
 /*nav end*/
+
+                            /* * * * */
+
 /*container*/
 .container{
     display: flex;
@@ -134,7 +149,7 @@ form{
     background: #ffffff;
     border: 1px solid #dddddd;
 }
-.box{
+.boxIcon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,18 +159,23 @@ form{
     border: 1px solid #dddddd;
     margin: 1px;
 }
+.boxContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* box 1 container*/
 .boxLike{
     margin: 4px 0 2px 4px;
 }
-.boxLike > .box:nth-child(2){
+.boxLike > .boxIcon:nth-child(2){
     margin: 2px 0 2px 1px;
 }
 /*box 2 container*/
 .boxImage > img{
     width: 145px;
     height: 100px;
-    margin: 5px 0px 1px 1px ;
+    margin: 5px 0 1px 1px ;
 }
 /*box 3 description*/
 .boxDescription{
@@ -170,9 +190,6 @@ form{
     margin: 3px 0 0 0 ;
 }
 .contentBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 130px;
     height: 30px;
     background: #fafafa;
@@ -194,9 +211,6 @@ form{
     margin: 2px 0 0 2px;
 }
 .infoContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0 15px 0 15px;
     height: 64px;
     background: #fafafa;
@@ -204,9 +218,6 @@ form{
     margin: 5px 0 0 2px;
 }
 .infoIcon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 30px;
     width: 100%;
     background: #fafafa;
@@ -226,9 +237,6 @@ form{
 }
 /*box 6 container*/
 .dateBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 80px;
     height: 64px;
     background: #fafafa;
@@ -236,9 +244,6 @@ form{
     margin: 5px 0 0 2px;
 }
 .codeBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 80px;
     height: 30px;
     border: 1px solid #dddddd;
@@ -248,7 +253,7 @@ form{
 /*box 7 container*/
 .boxName{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex: 2;
     min-width: 200px;
@@ -267,6 +272,165 @@ form{
     flex-wrap: wrap;
     width: 72px;
     margin-top:4px;
-
 }
 /*container end*/
+                            /* * * * */
+/*container Description*/
+.containerDescription{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.containerStatusVideo{
+    display: flex;
+    flex-direction: column;
+    width: 197px;
+    height: auto;
+    margin: 0 5px 4px 5px;
+}
+.containerDetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 195px;
+    height: auto;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin: 0 5px 4px 5px
+}
+.containerDetails > div{
+    display: flex;
+    flex-direction: row;
+}
+.boxLabel{
+
+    align-self: center;
+    margin-top:5px;
+}
+.boxInput{
+
+    margin-top:5px;
+}
+.boxInput > input, .boxInput > select, .boxInput > select > option   {
+    padding: 4px;
+    border: 1px solid #dddddd;
+}
+
+label{
+    padding: 4px 4px 4px 0;
+}
+/*container form information*/
+.boxLabelSizeInfo{
+    width:30%;
+}
+.boxInputSizeInf{
+    width: 70%;
+}
+.boxInputSizeInf > input, .boxInputSizeInf > select, .boxInputSizeInf > select > option {
+    width: 70px;
+}
+.boxInputSizeInf > select{
+    width: calc(70px + 10px);
+}
+/*container box distance*/
+.boxLabelSizeDistance{
+    width:55%;
+}
+.boxInputSizeDistance{
+    width: 40%;
+}
+.boxM{
+    align-self: center;
+    width: 5%;
+}
+.boxInputSizeDistance > input {
+    width: 30px;
+}
+/*container box characteristic*/
+.boxCheckbox{
+    align-self: center;
+    width:10%;
+}
+.boxCheckbox > input{
+    position: relative;
+    top:4px;
+    text-align: center;
+}
+.boxLabelInputCharacteristic > input{
+    width: 40px;
+}
+.boxLabelSizeCharacteristic{
+    width:35%;
+}
+.boxLabelInputCharacteristic{
+    width:40%;
+}
+/*container box range*/
+.boxInputSizeRang{
+    width: 35%;
+}
+.boxLabelSizeRange{
+    width: 25%;
+}
+.boxInputSizeRange > input{
+    width: 40px;
+    margin-left: 4px;
+}
+/*container status and video*/
+
+
+.boxStatus{
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    height: 40%;
+}
+.boxVideo{
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    height: 60%;
+    margin-top: 2px;
+}
+.boxVideo > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+}
+.boxVideo > div >label>input{
+    width: 70px;
+}
+.boxVideo > div >label {
+    position: relative;
+    align-self: center;
+}
+
+.boxVideo >  div>label:before {
+    position: absolute;
+    left: -10px;
+    top: 9px;
+    bottom: 0;
+    width: 20px;
+}
+label[for=world]:before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 31.416 31.416" style="enable-background:new 0 0 31.416 31.416;" xml:space="preserve"><g><g><path d="M28.755,6.968l-0.47,0.149L25.782,7.34l-0.707,1.129l-0.513-0.163L22.57,6.51l-0.289-0.934L21.894,4.58l-1.252-1.123    l-1.477-0.289l-0.034,0.676l1.447,1.412l0.708,0.834L20.49,6.506l-0.648-0.191L18.871,5.91l0.033-0.783l-1.274-0.524l-0.423,1.841    l-1.284,0.291l0.127,1.027l1.673,0.322l0.289-1.641l1.381,0.204l0.642,0.376h1.03l0.705,1.412l1.869,1.896l-0.137,0.737    l-1.507-0.192l-2.604,1.315l-1.875,2.249l-0.244,0.996h-0.673l-1.254-0.578l-1.218,0.578l0.303,1.285l0.53-0.611l0.932-0.029    l-0.065,1.154l0.772,0.226l0.771,0.866l1.259-0.354l1.438,0.227l1.67,0.449l0.834,0.098l1.414,1.605l2.729,1.605l-1.765,3.372    l-1.863,0.866l-0.707,1.927l-2.696,1.8l-0.287,1.038c6.892-1.66,12.019-7.851,12.019-15.253    C31.413,12.474,30.433,9.465,28.755,6.968z" fill="#686767"/> <path d="M17.515,23.917l-1.144-2.121l1.05-2.188l-1.05-0.314l-1.179-1.184l-2.612-0.586l-0.867-1.814v1.077h-0.382l-2.251-3.052    v-2.507L7.43,8.545L4.81,9.012H3.045L2.157,8.43L3.29,7.532L2.16,7.793c-1.362,2.326-2.156,5.025-2.156,7.916    c0,8.673,7.031,15.707,15.705,15.707c0.668,0,1.323-0.059,1.971-0.137l-0.164-1.903c0,0,0.721-2.826,0.721-2.922    C18.236,26.357,17.515,23.917,17.515,23.917z" fill="#686767"/> <path d="M5.84,5.065l2.79-0.389l1.286-0.705l1.447,0.417l2.312-0.128l0.792-1.245l1.155,0.19l2.805-0.263L19.2,2.09l1.09-0.728    l1.542,0.232l0.562-0.085C20.363,0.553,18.103,0,15.708,0C10.833,0,6.474,2.222,3.596,5.711h0.008L5.84,5.065z M16.372,1.562    l1.604-0.883l1.03,0.595l-1.491,1.135l-1.424,0.143l-0.641-0.416L16.372,1.562z M11.621,1.691l0.708,0.295l0.927-0.295    l0.505,0.875l-2.14,0.562l-1.029-0.602C10.591,2.526,11.598,1.878,11.621,1.691z" fill="#686767"/> </g></g></svg>');
+}
+label[for=russia]:before{
+    content: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">  <polygon style="fill:#F0F0F0;" points="0,85.33 0,199.107 0,312.885 0,426.662 512,426.662 512,312.885 512,199.107 512,85.33 "/><rect y="85.333" style="fill:#0052B4;" width="512" height="341.337"/><rect y="85.333" style="fill:#F0F0F0;" width="512" height="113.775"/><rect y="312.884" style="fill:#D80027;" width="512" height="113.775"/></svg>');
+}
+label[for=germany]:before{
+    content: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <rect y="85.331" style="fill:#D80027;" width="512" height="341.337"/>  <rect y="85.331" width="512" height="113.775"/>   <rect y="312.882" style="fill:#FFDA44;" width="512" height="113.775"/>   </svg>');
+}
+label[for=spain]:before{
+    content: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"> <path style="fill:#C8414B;" d="M8.828,423.725h494.345c4.875,0,8.828-3.953,8.828-8.828V97.104c0-4.875-3.953-8.828-8.828-8.828  H8.828C3.953,88.277,0,92.229,0,97.104v317.793C0,419.773,3.953,423.725,8.828,423.725z"/>  <rect y="158.901" style="fill:#FFD250;" width="512" height="194.21"/>  <path style="fill:#C8414B;" d="M216.276,256.001l7.485-33.681c0.69-3.102-1.671-6.044-4.849-6.044h-5.272c-3.177,0-5.537,2.942-4.849,6.044L216.276,256.001z"/><rect x="207.45" y="238.341" style="fill:#F5F5F5;" width="17.655" height="75.03"/><rect x="203.03" y="229.521" style="fill:#FAB446;" width="26.483" height="8.828"/> <g> <rect x="185.38" y="256.001" style="fill:#C8414B;" width="44.14" height="8.828"/>    <polygon style="fill:#C8414B;" points="229.517,291.311 203.034,282.484 203.034,273.656 229.517,282.484 	"/>    <path style="fill:#C8414B;" d="M83.862,256.001l7.485-33.681c0.69-3.102-1.671-6.044-4.849-6.044h-5.272    c-3.177,0-5.537,2.942-4.849,6.044L83.862,256.001z"/>    </g>    <path style="fill:#F5F5F5;" d="M114.759,229.518c-4.875,0-8.828,3.953-8.828,8.828v57.379c0,10.725,10.01,30.897,44.138,30.897s44.138-20.171,44.138-30.897v-57.379c0-4.875-3.953-8.828-8.828-8.828H114.759z"/>  <g>    <path style="fill:#C8414B;" d="M150.069,273.656h-44.138v-35.31c0-4.875,3.953-8.828,8.828-8.828h35.31V273.656z"/>    <path style="fill:#C8414B;" d="M150.069,273.656h44.138v22.069c0,12.189-9.88,22.069-22.069,22.069l0,0c-12.189,0-22.069-9.88-22.069-22.069V273.656z"/>   </g>    <path style="fill:#FAB446;" d="M105.931,273.656h44.138v22.069c0,12.189-9.88,22.069-22.069,22.069l0,0c-12.189,0-22.069-9.88-22.069-22.069V273.656z"/>    <g>    <path style="fill:#C8414B;" d="M141.241,313.281v-39.625h-8.828v43.693C135.697,316.683,138.664,315.229,141.241,313.281z"/>    <path style="fill:#C8414B;" d="M123.586,317.349v-43.693h-8.828v39.625C117.336,315.229,120.303,316.683,123.586,317.349z"/>    </g>    <rect x="114.76" y="256.001" style="fill:#FFB441;" width="26.483" height="8.828"/>    <g>    <rect x="114.76" y="238.341" style="fill:#FAB446;" width="26.483" height="8.828"/>    <rect x="119.17" y="243.591" style="fill:#FAB446;" width="17.655" height="15.992"/>    </g>    <rect x="75.03" y="238.341" style="fill:#F5F5F5;" width="17.655" height="75.03"/>    <g>    <rect x="70.62" y="308.971" style="fill:#FAB446;" width="26.483" height="8.828"/>    <rect x="70.62" y="229.521" style="fill:#FAB446;" width="26.483" height="8.828"/>    </g>    <rect x="66.21" y="317.791" style="fill:#5064AA;" width="35.31" height="8.828"/>    <rect x="207.45" y="308.971" style="fill:#FAB446;" width="26.483" height="8.828"/>    <rect x="198.62" y="317.791" style="fill:#5064AA;" width="35.31" height="8.828"/>    <rect x="123.59" y="220.691" style="fill:#FAB446;" width="52.966" height="8.828"/>    <rect x="145.66" y="194.211" style="fill:#FFB441;" width="8.828" height="26.483"/>    <g>    <path style="fill:#F5F5F5;" d="M141.241,207.449c-7.302,0-13.241-5.94-13.241-13.241c0-7.302,5.94-13.241,13.241-13.241c7.302,0,13.241,5.94,13.241,13.241C154.483,201.509,148.543,207.449,141.241,207.449z M141.241,189.794c-2.435,0-4.414,1.978-4.414,4.414c0,2.435,1.978,4.414,4.414,4.414s4.414-1.978,4.414-4.414C145.655,191.773,143.677,189.794,141.241,189.794z"/>    <path style="fill:#F5F5F5;" d="M158.897,207.449c-7.302,0-13.241-5.94-13.241-13.241c0-7.302,5.94-13.241,13.241-13.241c7.302,0,13.241,5.94,13.241,13.241S166.198,207.449,158.897,207.449z M158.897,189.794c-2.435,0-4.414,1.978-4.414,4.414 c0,2.435,1.978,4.414,4.414,4.414c2.435,0,4.414-1.978,4.414-4.414C163.31,191.773,161.332,189.794,158.897,189.794z"/>   <path style="fill:#F5F5F5;" d="M176.552,216.277c-7.302,0-13.241-5.94-13.241-13.241c0-7.302,5.94-13.241,13.241-13.241   c7.302,0,13.241,5.94,13.241,13.241S183.853,216.277,176.552,216.277z M176.552,198.622c-2.435,0-4.414,1.978-4.414,4.414c0,2.435,1.978,4.414,4.414,4.414c2.435,0,4.414-1.978,4.414-4.414S178.987,198.622,176.552,198.622z"/> <path style="fill:#F5F5F5;" d="M123.586,216.277c-7.302,0-13.241-5.94-13.241-13.241c0-7.302,5.94-13.241,13.241-13.241c7.302,0,13.241,5.94,13.241,13.241C136.828,210.337,130.888,216.277,123.586,216.277z M123.586,198.622c-2.435,0-4.414,1.978-4.414,4.414c0,2.435,1.978,4.414,4.414,4.414s4.414-1.979,4.414-4.415C128,200.6,126.022,198.622,123.586,198.622z"/>    </g>    <path style="fill:#FAB446;" d="M176.552,291.311v4.414c0,2.434-1.98,4.414-4.414,4.414s-4.414-1.98-4.414-4.414v-4.414H176.552 M185.379,282.484h-26.483v13.241c0,7.302,5.94,13.241,13.241,13.241c7.302,0,13.241-5.94,13.241-13.241v-13.241H185.379z"/>    <path style="fill:#FFA0D2;" d="M172.138,264.829L172.138,264.829c-4.875,0-8.828-3.953-8.828-8.828v-8.828    c0-4.875,3.953-8.828,8.828-8.828l0,0c4.875,0,8.828,3.953,8.828,8.828v8.828C180.966,260.876,177.013,264.829,172.138,264.829z"/><circle style="fill:#5064AA;" cx="150.07" cy="273.651" r="13.241"/><rect x="145.66" y="176.551" style="fill:#FAB446;" width="8.828" height="26.483"/>    <path style="fill:#C8414B;" d="M123.586,220.691l-8.828-8.828l5.171-5.171c7.993-7.993,18.835-12.484,30.14-12.484l0,0    c11.305,0,22.146,4.491,30.14,12.484l5.171,5.171l-8.828,8.828H123.586z"/>    <g><circle style="fill:#FFD250;" cx="150.07" cy="211.861" r="4.414"/><circle style="fill:#FFD250;" cx="132.41" cy="211.861" r="4.414"/><circle style="fill:#FFD250;" cx="167.72" cy="211.861" r="4.414"/></g><g><rect x="70.62" y="256.001" style="fill:#C8414B;" width="44.14" height="8.828"/>    <polygon style="fill:#C8414B;" points="70.621,291.311 97.103,282.484 97.103,273.656 70.621,282.484 	"/>    </g></svg>');
+}
+label[for=uk]:before{
+    content: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">     <rect y="85.333" style="fill:#F0F0F0;" width="512" height="341.337"/>     <polygon style="fill:#D80027;" points="288,85.33 224,85.33 224,223.996 0,223.996 0,287.996 224,287.996 224,426.662 288,426.662      288,287.996 512,287.996 512,223.996 288,223.996 "/>     <g>     <polygon style="fill:#0052B4;" points="393.785,315.358 512,381.034 512,315.358 	"/>     <polygon style="fill:#0052B4;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358 	"/>     <polygon style="fill:#0052B4;" points="458.634,426.662 311.652,344.998 311.652,426.662 	"/>     </g>     <polygon style="fill:#F0F0F0;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358 "/>     <polygon style="fill:#D80027;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358 "/>     <g>     <polygon style="fill:#0052B4;" points="90.341,315.356 0,365.546 0,315.356 	"/>     <polygon style="fill:#0052B4;" points="200.348,329.51 200.348,426.661 25.491,426.661 	"/>     </g>     <polygon style="fill:#D80027;" points="143.693,315.358 0,395.188 0,426.662 0,426.662 200.348,315.358 "/>     <g>     <polygon style="fill:#0052B4;" points="118.215,196.634 0,130.958 0,196.634 	"/>     <polygon style="fill:#0052B4;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634 	"/>     <polygon style="fill:#0052B4;" points="53.366,85.33 200.348,166.994 200.348,85.33 	"/>     </g>     <polygon style="fill:#F0F0F0;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634 "/>     <polygon style="fill:#D80027;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634 "/>     <g>     <polygon style="fill:#0052B4;" points="421.659,196.636 512,146.446 512,196.636 	"/>     <polygon style="fill:#0052B4;" points="311.652,182.482 311.652,85.331 486.509,85.331 	"/>     </g>     <polygon style="fill:#D80027;" points="368.307,196.634 512,116.804 512,85.33 512,85.33 311.652,196.634 "/>     </svg>     ');
+}
+label[for=france]:before{
+    content: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">    <rect y="85.331" style="fill:#F0F0F0;" width="512" height="341.337"/>    <rect y="85.331" style="fill:#0052B4;" width="170.663" height="341.337"/>    <rect x="341.337" y="85.331" style="fill:#D80027;" width="170.663" height="341.337"/>    </svg>');
+}
