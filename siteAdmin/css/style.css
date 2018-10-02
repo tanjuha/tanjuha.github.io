@@ -1,30 +1,39 @@
-body{
+*{
     margin: 0;
     padding: 0;
+}
+body{
     background: #fafafa;
+    font-family: 'Roboto', sans-serif;
 }
-
-
 span{
-    font-size: 14px;
-}
-label{
     font-size: 12px;
 }
+label,select, input[type=text]{
+    font-size: 10px;
+}
+input, select, button{
+    cursor: pointer;
+}
 h3{
-    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 13px;
     color: #8d929b;
 }
 ul, li{
     margin: 0;
-
 }
-/*nav*/
-nav{
-    position: relative;
-    width: 100%;
-    top:0;
+a{
+    text-decoration: none;
+    color:black;
 }
+button{
+    border: 0;
+    background: #fafafa;
+    cursor: pointer;
+    outline: none;
+}
+/*menu*/
 /*hamburger*/
 .navBarTop{
     background: #fff;
@@ -33,7 +42,9 @@ nav{
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0 0 2px black;
 }
+
 .navBarTop > div{
     display: flex;
     flex-direction: row;
@@ -79,10 +90,7 @@ nav{
     width: 90px;
 }
 .searchButton{
-    border: 0;
     background: #ffffff;
-    cursor: pointer;
-    outline: none;
 }
 form{
     display: flex;
@@ -110,7 +118,7 @@ form{
     top:-9px;
 }
 /*logo end*/
-/*menu bar*/
+/*vertical nav*/
 .menuBar{
      float: left;
     background: #1d2939;
@@ -132,13 +140,13 @@ form{
 .menuBar >ul >li > a{
     position: relative;
 }
-/*menu bar end*/
-/*nav end*/
+/*vertical end*/
+/*menu end*/
 
                             /* * * * */
 
-/*container*/
-.container{
+/*content*/
+.content{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -147,7 +155,7 @@ form{
     width: auto;
     margin: 30px;
     background: #ffffff;
-    border: 1px solid #dddddd;
+    box-shadow: 0 0 1px black;
 }
 .boxIcon{
     display: flex;
@@ -158,6 +166,11 @@ form{
     background: #fafafa;
     border: 1px solid #dddddd;
     margin: 1px;
+}
+.boxIcon > a, .boxIcon > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .boxContent{
     display: flex;
@@ -202,6 +215,7 @@ form{
     display: flex;
     flex-direction: row;
 }
+
 .informationBoxIcon{
     display: flex;
     flex-direction: row;
@@ -216,6 +230,22 @@ form{
     background: #fafafa;
     border: 1px solid #dddddd;
     margin: 5px 0 0 2px;
+}
+.infoContent>input{
+    position: relative;
+    border: none ;
+    outline: none;
+    width: 8px;
+    background: #fafafa;
+}
+.nTh>input{
+    width: 22px;
+}
+.nTv > input{
+    width: 15px;
+}
+.nFi>input{
+    width: 38px;
 }
 .infoIcon{
     height: 30px;
@@ -253,17 +283,38 @@ form{
 /*box 7 container*/
 .boxName{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     flex: 2;
     min-width: 200px;
+    margin: 5px 1px 0 1px;
+}
+.detailsGeneral{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     height: 30px;
     background: #fafafa;
     border: 1px solid #dddddd;
-    margin: 5px 1px 0 1px;
 }
 .detailsGeneral > span{
+    align-self: flex-start;
     padding: 3px;
+}
+.detailsEmptyAreaNone{
+    display: none;
+    margin-top: 2px ;
+}
+.detailsEmptyAreaNone > textarea{
+    content:'';
+    height: 64px;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    width: 100%;
+    outline: none;
+}
+.detailsEmptyArea{
+    display: inherit;
 }
 /*box 8 container*/
 .boxDetailsMenu{
@@ -273,42 +324,50 @@ form{
     width: 72px;
     margin-top:4px;
 }
-/*container end*/
+/*content end*/
                             /* * * * */
 /*container Description*/
-.containerDescription{
-    display: flex;
+.blocDescription{
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.containerStatusVideo{
+.toggleDescription{
     display: flex;
-    flex-direction: column;
-    width: 197px;
-    height: auto;
-    margin: 0 5px 4px 5px;
+}
+
+.pencil{
+    fill: #e84c3d;
 }
 .containerDetails{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 195px;
+    width: 185px;
     height: auto;
     background: #fafafa;
     border: 1px solid #dddddd;
     padding: 20px;
-    margin: 0 5px 4px 5px
+    margin: 0 5px 5px 5px
 }
 .containerDetails > div{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+.containerDetails > div >div{
+    display: flex;
+    flex-direction: row;
+}
+
 .boxLabel{
 
-    align-self: center;
     margin-top:5px;
 }
 .boxInput{
+
+    justify-content: flex-end;
 
     margin-top:5px;
 }
@@ -322,16 +381,16 @@ label{
 }
 /*container form information*/
 .boxLabelSizeInfo{
-    width:30%;
+    width:50%;
 }
 .boxInputSizeInf{
-    width: 70%;
+    width: 50%;
 }
 .boxInputSizeInf > input, .boxInputSizeInf > select, .boxInputSizeInf > select > option {
-    width: 70px;
+    width: 80px;
 }
 .boxInputSizeInf > select{
-    width: calc(70px + 10px);
+    width: calc(80px + 10px);
 }
 /*container box distance*/
 .boxLabelSizeDistance{
@@ -341,44 +400,54 @@ label{
     width: 40%;
 }
 .boxM{
+    margin-left: 4px;
     align-self: center;
     width: 5%;
 }
 .boxInputSizeDistance > input {
-    width: 30px;
+    width: 33px;
 }
 /*container box characteristic*/
 .boxCheckbox{
     align-self: center;
     width:10%;
 }
-.boxCheckbox > input{
+ input[type=checkbox]{
     position: relative;
-    top:4px;
+    top:3px;
     text-align: center;
 }
 .boxLabelInputCharacteristic > input{
     width: 40px;
 }
 .boxLabelSizeCharacteristic{
-    width:35%;
+    width:50%;
 }
 .boxLabelInputCharacteristic{
     width:40%;
 }
 /*container box range*/
+input[type=checkbox]{
+    background-color: #ccc;
+}
 .boxInputSizeRang{
     width: 35%;
 }
 .boxLabelSizeRange{
-    width: 25%;
+    width: 50%;
 }
 .boxInputSizeRange > input{
     width: 40px;
     margin-left: 4px;
 }
 /*container status and video*/
-
+.containerStatusVideo{
+    display: flex;
+    flex-direction: column;
+    width: 237px;
+    height: auto;
+    margin: 0 5px 5px 5px;
+}
 
 .boxStatus{
     background: #fafafa;
@@ -389,11 +458,16 @@ label{
     padding: 20px;
     height: 40%;
 }
+.boxStatus > div{
+    margin-top: 5px;
+}
 .boxVideo{
     background: #fafafa;
     border: 1px solid #dddddd;
     height: 60%;
     margin-top: 2px;
+    padding-right: 10px;
+
 }
 .boxVideo > div{
     display: flex;
@@ -401,8 +475,15 @@ label{
     justify-content: flex-end;
     align-self: center;
 }
+.boxVideo > div:nth-child(1){
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.boxVideo > div > h3{
+    margin-left: 20px;
+}
 .boxVideo > div >label>input{
-    width: 70px;
+    width: 100px;
 }
 .boxVideo > div >label {
     position: relative;
@@ -411,13 +492,19 @@ label{
 
 .boxVideo >  div>label:before {
     position: absolute;
-    left: -10px;
-    top: 9px;
+    left: -28px;
+    top: 4px;
     bottom: 0;
-    width: 20px;
+    width: 18px;
+}
+.boxVideo >  div>label:nth-child(2):before{
+    top: 3px;
+}
+.boxVideo >  div:nth-child(7)>label{
+
 }
 label[for=world]:before{
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 31.416 31.416" style="enable-background:new 0 0 31.416 31.416;" xml:space="preserve"><g><g><path d="M28.755,6.968l-0.47,0.149L25.782,7.34l-0.707,1.129l-0.513-0.163L22.57,6.51l-0.289-0.934L21.894,4.58l-1.252-1.123    l-1.477-0.289l-0.034,0.676l1.447,1.412l0.708,0.834L20.49,6.506l-0.648-0.191L18.871,5.91l0.033-0.783l-1.274-0.524l-0.423,1.841    l-1.284,0.291l0.127,1.027l1.673,0.322l0.289-1.641l1.381,0.204l0.642,0.376h1.03l0.705,1.412l1.869,1.896l-0.137,0.737    l-1.507-0.192l-2.604,1.315l-1.875,2.249l-0.244,0.996h-0.673l-1.254-0.578l-1.218,0.578l0.303,1.285l0.53-0.611l0.932-0.029    l-0.065,1.154l0.772,0.226l0.771,0.866l1.259-0.354l1.438,0.227l1.67,0.449l0.834,0.098l1.414,1.605l2.729,1.605l-1.765,3.372    l-1.863,0.866l-0.707,1.927l-2.696,1.8l-0.287,1.038c6.892-1.66,12.019-7.851,12.019-15.253    C31.413,12.474,30.433,9.465,28.755,6.968z" fill="#686767"/> <path d="M17.515,23.917l-1.144-2.121l1.05-2.188l-1.05-0.314l-1.179-1.184l-2.612-0.586l-0.867-1.814v1.077h-0.382l-2.251-3.052    v-2.507L7.43,8.545L4.81,9.012H3.045L2.157,8.43L3.29,7.532L2.16,7.793c-1.362,2.326-2.156,5.025-2.156,7.916    c0,8.673,7.031,15.707,15.705,15.707c0.668,0,1.323-0.059,1.971-0.137l-0.164-1.903c0,0,0.721-2.826,0.721-2.922    C18.236,26.357,17.515,23.917,17.515,23.917z" fill="#686767"/> <path d="M5.84,5.065l2.79-0.389l1.286-0.705l1.447,0.417l2.312-0.128l0.792-1.245l1.155,0.19l2.805-0.263L19.2,2.09l1.09-0.728    l1.542,0.232l0.562-0.085C20.363,0.553,18.103,0,15.708,0C10.833,0,6.474,2.222,3.596,5.711h0.008L5.84,5.065z M16.372,1.562    l1.604-0.883l1.03,0.595l-1.491,1.135l-1.424,0.143l-0.641-0.416L16.372,1.562z M11.621,1.691l0.708,0.295l0.927-0.295    l0.505,0.875l-2.14,0.562l-1.029-0.602C10.591,2.526,11.598,1.878,11.621,1.691z" fill="#686767"/> </g></g></svg>');
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 31.416 31.416" style="enable-background:new 0 0 31.416 31.416;" xml:space="preserve"><g><g><path d="M28.755,6.968l-0.47,0.149L25.782,7.34l-0.707,1.129l-0.513-0.163L22.57,6.51l-0.289-0.934L21.894,4.58l-1.252-1.123    l-1.477-0.289l-0.034,0.676l1.447,1.412l0.708,0.834L20.49,6.506l-0.648-0.191L18.871,5.91l0.033-0.783l-1.274-0.524l-0.423,1.841    l-1.284,0.291l0.127,1.027l1.673,0.322l0.289-1.641l1.381,0.204l0.642,0.376h1.03l0.705,1.412l1.869,1.896l-0.137,0.737    l-1.507-0.192l-2.604,1.315l-1.875,2.249l-0.244,0.996h-0.673l-1.254-0.578l-1.218,0.578l0.303,1.285l0.53-0.611l0.932-0.029    l-0.065,1.154l0.772,0.226l0.771,0.866l1.259-0.354l1.438,0.227l1.67,0.449l0.834,0.098l1.414,1.605l2.729,1.605l-1.765,3.372    l-1.863,0.866l-0.707,1.927l-2.696,1.8l-0.287,1.038c6.892-1.66,12.019-7.851,12.019-15.253    C31.413,12.474,30.433,9.465,28.755,6.968z" fill="#686767"/> <path d="M17.515,23.917l-1.144-2.121l1.05-2.188l-1.05-0.314l-1.179-1.184l-2.612-0.586l-0.867-1.814v1.077h-0.382l-2.251-3.052    v-2.507L7.43,8.545L4.81,9.012H3.045L2.157,8.43L3.29,7.532L2.16,7.793c-1.362,2.326-2.156,5.025-2.156,7.916    c0,8.673,7.031,15.707,15.705,15.707c0.668,0,1.323-0.059,1.971-0.137l-0.164-1.903c0,0,0.721-2.826,0.721-2.922    C18.236,26.357,17.515,23.917,17.515,23.917z" fill="#686767"/> <path d="M5.84,5.065l2.79-0.389l1.286-0.705l1.447,0.417l2.312-0.128l0.792-1.245l1.155,0.19l2.805-0.263L19.2,2.09l1.09-0.728    l1.542,0.232l0.562-0.085C20.363,0.553,18.103,0,15.708,0C10.833,0,6.474,2.222,3.596,5.711h0.008L5.84,5.065z M16.372,1.562    l1.604-0.883l1.03,0.595l-1.491,1.135l-1.424,0.143l-0.641-0.416L16.372,1.562z M11.621,1.691l0.708,0.295l0.927-0.295    l0.505,0.875l-2.14,0.562l-1.029-0.602C10.591,2.526,11.598,1.878,11.621,1.691z" fill="#686767"/> </g></g></svg>');
 }
 label[for=russia]:before{
     content: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">  <polygon style="fill:#F0F0F0;" points="0,85.33 0,199.107 0,312.885 0,426.662 512,426.662 512,312.885 512,199.107 512,85.33 "/><rect y="85.333" style="fill:#0052B4;" width="512" height="341.337"/><rect y="85.333" style="fill:#F0F0F0;" width="512" height="113.775"/><rect y="312.884" style="fill:#D80027;" width="512" height="113.775"/></svg>');
