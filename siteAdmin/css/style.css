@@ -86,8 +86,10 @@ button{
     position: relative;
     border: none ;
     outline: none;
-    font-size: 15px;
     width: 90px;
+}
+form > input[type=text]{
+    font-size: 14px;
 }
 .searchButton{
     background: #ffffff;
@@ -152,7 +154,7 @@ form{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    width: auto;
+    width: 1197px;
     margin: 30px;
     background: #ffffff;
     box-shadow: 0 0 1px black;
@@ -197,6 +199,15 @@ form{
     flex-wrap: wrap;
     width: 102px;
     margin: 4px 0 1px 1px;
+}
+.h, .p{
+    color:blue;
+}
+.s, .z{
+    color: #dddddd;
+}
+.e{
+    color: #e84c3d;
 }
 /*box 4 container*/
 .boxGeneral{
@@ -311,8 +322,10 @@ form{
     background: #fafafa;
     border: 1px solid #dddddd;
     width: 100%;
+    text-align: center;
     outline: none;
 }
+
 .detailsEmptyArea{
     display: none;
 }
