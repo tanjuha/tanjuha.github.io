@@ -302,7 +302,7 @@ form{
     padding: 3px;
 }
 .detailsEmptyAreaNone{
-    display: none;
+    display: inherit;
     margin-top: 2px ;
 }
 .detailsEmptyAreaNone > textarea{
@@ -314,7 +314,7 @@ form{
     outline: none;
 }
 .detailsEmptyArea{
-    display: inherit;
+    display: none;
 }
 /*box 8 container*/
 .boxDetailsMenu{
@@ -328,16 +328,16 @@ form{
                             /* * * * */
 /*container Description*/
 .blocDescription{
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .toggleDescription{
-    display: flex;
+    display: none;
 }
 
 .pencil{
-    fill: #e84c3d;
+    fill: #dddddd;
 }
 .containerDetails{
     display: flex;
