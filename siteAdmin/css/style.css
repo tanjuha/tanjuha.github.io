@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /*transition: all .2s;*/
 }
 body{
     background: #fafafa;
@@ -154,7 +155,8 @@ form{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 1197px;
+    width: auto;
+    /*width: 1197px;*/
     margin: 30px;
     background: #ffffff;
     box-shadow: 0 0 1px black;
@@ -212,13 +214,16 @@ form{
 /*box 4 container*/
 .boxGeneral{
     margin: 3px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    flex:1;
 }
 .contentBox{
-    width: 130px;
+    min-width: 130px;
     height: 30px;
     background: #fafafa;
     border: 1px solid #dddddd;
-    margin: 2px 0 2px 1px;
+    margin: 2px 0 0 1px;
 }
 /*box 5 container*/
 /*box in box 5*/
@@ -344,6 +349,7 @@ form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 .toggleDescription{
     display: none;
@@ -356,7 +362,9 @@ form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 185px;
+    flex:2;
+    width: auto;
+    min-width: 185px;
     height: auto;
     background: #fafafa;
     border: 1px solid #dddddd;
@@ -457,7 +465,9 @@ input[type=checkbox]{
 .containerStatusVideo{
     display: flex;
     flex-direction: column;
-    width: 237px;
+    flex:2;
+    width: auto;
+    min-width: 237px;
     height: auto;
     margin: 0 5px 5px 5px;
 }
