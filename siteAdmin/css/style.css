@@ -163,6 +163,10 @@ form{
     display: flex;
     flex-direction: row;
 }
+.boxFlexFirst{
+    display: flex;
+    flex-direction: row;
+}
 .content{
     display: flex;
     flex-wrap: wrap;

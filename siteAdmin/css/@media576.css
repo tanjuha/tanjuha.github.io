@@ -35,3 +35,10 @@ body{
 .boxVideo> div{
     flex-direction: column;
 }
+.boxDataCode{
+    display: flex;
+    flex-direction: row;
+}
+.flexBlocFirst{
+    flex-direction: column;
+}
