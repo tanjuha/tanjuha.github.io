@@ -149,6 +149,11 @@ form{
                             /* * * * */
 
 /*content*/
+.blocGeneralFirst, .blocGeneralSecond{
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +197,7 @@ form{
 .boxImage > img{
     width: 145px;
     height: 100px;
-    margin: 5px 0 1px 1px ;
+    margin: 5px 0 0 1px ;
 }
 /*box 3 description*/
 .boxDescription{
@@ -400,6 +405,18 @@ form{
 label{
     padding: 4px 4px 4px 0;
 }
+/*box*/
+.blocDescriptionBoxFirst{
+    display: flex;
+    flex-direction: row;
+    flex:2;
+}
+.blocDescriptionBoxSecond{
+    display: flex;
+    flex-direction: row;
+    flex:2;
+}
+/*box end*/
 /*container form information*/
 .boxLabelSizeInfo{
     width:50%;
@@ -415,10 +432,10 @@ label{
 }
 /*container box distance*/
 .boxLabelSizeDistance{
-    width:55%;
+    width:77%;
 }
 .boxInputSizeDistance{
-    width: 40%;
+    width: 23%;
 }
 .boxM{
     margin-left: 4px;
@@ -442,7 +459,7 @@ label{
     width: 40px;
 }
 .boxLabelSizeCharacteristic{
-    width:50%;
+    width:56%;
 }
 .boxLabelInputCharacteristic{
     width:40%;
@@ -480,6 +497,7 @@ input[type=checkbox]{
     border: 1px solid #dddddd;
     padding: 20px;
     height: 40%;
+    flex:2
 }
 .boxStatus > div{
     margin-top: 5px;
@@ -490,6 +508,7 @@ input[type=checkbox]{
     height: 60%;
     margin-top: 2px;
     padding-right: 10px;
+    flex:2
 
 }
 .boxVideo > div{

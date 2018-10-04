@@ -1,0 +1,136 @@
+body{
+    background: red;
+}
+svg{
+    width:25px;
+    height: 25px;
+}
+h3{
+    font-size: 19px;
+}
+span{
+    font-size: 17px;
+}
+label,select, input[type=text], input[type=url]{
+    font-size: 17px;
+}
+/*header*/
+.navBarTop{
+    height: 70px;
+}
+form > input[type=text]{
+    font-size: 18px;
+}
+.logoIcon > svg{
+    width:35px;
+    height: 35px;
+}
+.menu-hamburger, .menu-hamburger:before, .menu-hamburger:after{
+    width: 25px;
+    height: 4px;
+}
+.menu-hamburger:before{
+    top:-7px;
+}
+.menu-hamburger:after{
+    top:7px;
+}
+.menuBar{
+    width:97px;
+}
+/*header end*/
+/*section*/
+
+.boxIcon{
+    width: 40px;
+    height: 40px;
+}
+.boxImage > img{
+    height:131px;
+    width:auto;
+}
+.boxDescription{
+    width:132px;
+}
+.contentBox{
+    height:40px;
+}
+.infoContent{
+    height:84px;
+}
+.infoIcon{
+    height: 40px;
+}
+.infoContent>input{
+    width: 10px;
+}
+.nTh>input{
+    width: 28px;
+}
+.nTv > input{
+    width: 20px;
+}
+.nFi>input{
+    width: 48px;
+}
+.dateBox{
+    width: 100px;
+    height:84px;
+    margin-right: 2px;
+}
+.codeBox{
+    width: 100px;
+    height:40px;
+}
+.detailsGeneral{
+    height: 40px;
+}
+.detailsEmptyAreaNone > textarea{
+    height:84px;
+}
+.boxDetailsMenu{
+    width:88px;
+    margin-right: 4px;
+}
+/*section forms*/
+.boxInputSizeInf > input{
+    width:105px;
+}
+.boxInputSizeInf > select{
+    width: calc(105px + 10px);
+}
+.boxLabelSizeDistance{
+    width: 75%;
+}
+.boxInputSizeDistance{
+    width: 37%;
+}
+.boxInputSizeDistance > input{
+    width:55px;
+    margin-right: 5px;
+}
+.boxLabelSizeCharacteristic{
+    width: 67%;
+}
+.boxLabelInputCharacteristic{
+    width: 36%;
+}
+.boxLabelInputCharacteristic > input{
+    width: 50px;
+    margin-right: 5px;
+}
+.boxLabelSizeRange{
+    width: 70%;
+}
+.boxInputSizeRange > input{
+    width: 50px;
+}
+.containerStatusVideo{
+    flex: auto;
+    width: 210px;
+}
+.boxVideo > div >label>input{
+    width: 150px;
+}
+/*section forms end*/
+/*section end*/
