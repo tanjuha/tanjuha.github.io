@@ -55,26 +55,55 @@ body{
 .containerDetails{
     min-width: 0;
 }
-.containerDetails > div{
-    flex-direction: column;
-}
 /*box general information*/
 .boxInformation{
     margin: 0 4px 4px 4px;
 }
 /*box general information end*/
+/*bloc second*/
+.dateBox{
+    height:40px;
+    margin: 2px 2px 6px 4px;
+}
 .boxDetailsMenu{
     width: 100%;
     flex:2;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+}
+.blocGeneralSecond{
     justify-content: center;
+    margin: 0 3px 0 3px;
+}
+/*bloc second end*/
+/*containers forms*/
+.boxLabelSizeDistance{
+    width:81%;
 }
 .containerStatusVideo{
     min-width: 0;
 }
+.boxVideo{
+    margin:2px 0 0 0;
+}
 .boxVideo> div{
     flex-direction: column;
 }
+.boxVideo > div > h3{
+    margin-left:0;
+}
+.boxStatus{
+    margin-right: 0;
+}
+.boxVideo > div:nth-child(7) > label{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .boxDataCode{
     display: flex;
     flex-direction: row;
@@ -82,3 +111,4 @@ body{
 .flexBlocFirst{
     flex-direction: column;
 }
+/*containers forms end*/
