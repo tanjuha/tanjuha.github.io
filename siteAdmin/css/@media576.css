@@ -116,3 +116,6 @@
     flex-direction: column;
 }
 /*containers forms end*/
+.containerDetails{
+    flex-wrap: nowrap;
+}
