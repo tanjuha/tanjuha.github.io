@@ -71,6 +71,7 @@ button{
     border-radius: 10px;
     background: #1d2939;
     top: -6px ;
+    left:0;
 }
 .menu-hamburger:after{
     position: absolute;

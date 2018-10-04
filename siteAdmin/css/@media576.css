@@ -8,10 +8,18 @@
 .logoIcon{
     margin: 0 10px 0 0;
 }
-.menuBar, .formSearch, .logoIcon > span{
+ .menuBar, .formSearch, .logoIcon > span{
     display: none;
 }
+.menuAllWidth{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width:100vw;
+    z-index:100;
+    overflow-y:  hidden;
 
+}
 /*header end*/
 .content{
      margin: 10px;

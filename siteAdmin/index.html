@@ -14,6 +14,7 @@
     <link rel="stylesheet" media="screen and (max-width:  576px)" href="css/@media576.css">
     <!--@media screen end-->
     <script src="js/openDescription.js"></script>
+    <script src="js/openMenu.js"></script>
 
 </head>
 <body>
@@ -21,9 +22,9 @@
     <header>
         <div class="navBarTop">
             <div>
-            <div class="menu-hamburger">
+            <button onclick="toggleMenu()" class="menu-hamburger">
                 <span></span>
-            </div>
+            </button>
             <form class="formSearch" action="/xxx.php">
                 <input class="search" type="text" placeholder="Поиск">
                 <button class="searchButton" type="submit">
@@ -70,7 +71,7 @@
             </div>
         </div>
     </header>
-    <nav class="menuBar">
+    <nav class="menuBar " id="menu">
         <ul>
             <li>
                 <a href="#">
