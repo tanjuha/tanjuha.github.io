@@ -16,10 +16,39 @@ body{
 .content{
     margin: 10px;
 }
-
+/*first bloc*/
+.boxLike{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxImage{
+   margin: 0 6px -1px 1px;
+}
+.boxImage > img{
+    width: 100%;
+    height:auto;
+    min-width: 245px;
+    margin-right: -1px;
+}
+/*first bloc end*/
+/*bloc icons*/
+.boxDescription{
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 1px;
+}
+/*bloc icons end*/
+/*bloc general*/
 .blocGeneralFirst{
     justify-content: center;
 }
+.boxGeneral{
+    margin: 3px 5px 0 4px;
+}
+/*bloc general end*/
+
 .blocFlexFirst{
     flex-direction: column;
 }
@@ -29,9 +58,11 @@ body{
 .containerDetails > div{
     flex-direction: column;
 }
-.boxContent > input{
-    width:100%;
+/*box general information*/
+.boxInformation{
+    margin: 0 4px 4px 4px;
 }
+/*box general information end*/
 .boxDetailsMenu{
     width: 100%;
     flex:2;
