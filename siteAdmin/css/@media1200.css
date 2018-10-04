@@ -40,7 +40,9 @@ form > input[type=text]{
 }
 /*header end*/
 /*section*/
-
+.blocGeneralFirst,.blocGeneralSecond{
+   flex: 2;
+}
 .blocDescription{
     flex-direction: column;
 }

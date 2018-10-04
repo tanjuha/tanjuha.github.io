@@ -1,3 +1,36 @@
 body{
-    background: pink;
+    background: yellow;
+}
+.contentBox{
+    flex:2;
+}
+.blocGeneralFirst,.blocGeneralSecond{
+    flex-wrap: wrap;
+    flex:auto;
+}
+
+.boxInformation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex:2;
+}
+.informationBoxContent{
+    display: flex;
+    flex-direction: row;
+    flex:2;
+}
+
+.infoContent{
+    flex: 2;
+}
+.boxName{
+    min-width: 224px;
+}
+
+.blocDescriptionBoxFirst,.blocDescriptionBoxSecond{
+    flex-direction: column;
+}
+.containerStatusVideo{
+    flex-direction: column;
 }
