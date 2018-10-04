@@ -1,37 +1,55 @@
 body{
     background: #f06ad3;
 }
-/*.contentBox{*/
-    /*flex:2;*/
-/*}*/
-/*.blocGeneralFirst,.blocGeneralSecond{*/
-    /*flex-wrap: wrap;*/
-/*}*/
+.flexBlocFirst{
+    flex-direction: column;
+}
+.boxImage{
+    margin: 0 6px -1px 1px;
+}
+.boxImage > img{
+    width: 100%;
+    height:auto;
+    min-width: 245px;
+    margin-right: -1px;
+}
+.boxGeneral{
+    margin: 3px 5px 0 4px;
+}
+.boxInformation{
+    margin: 0 4px 4px 4px;
+}
 
-/*.boxInformation{*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*flex-wrap: wrap;*/
-    /*flex:2;*/
-/*}*/
-/*.informationBoxContent{*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*flex:2;*/
-/*}*/
-
-/*.infoContent{*/
-    /*flex: 2;*/
-/*}*/
-/*.boxName{*/
-    /*min-width: 224px;*/
-/*}*/
-/*.boxDetailsMenu{*/
-    /*width: auto;*/
-/*}*/
-/*.blocDescriptionBoxFirst,.blocDescriptionBoxSecond{*/
-    /*flex-direction: column;*/
-/*}*/
-/*.containerStatusVideo{*/
-    /*flex-direction: column;*/
-/*}*/
+.blocFlexFirst{
+    flex-direction: column;
+}
+.boxLike{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxDescription{
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 1px;
+}
+.boxDetailsMenu{
+    width: 100%;
+    flex:2;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 5px 4px 0 4px;
+}
+.boxName{
+    margin-right: 4px;
+}
+.boxVideo{
+    margin:2px 0 0 0;
+}
+.boxVideo > div > h3{
+    margin-left:0;
+}
+.boxStatus{
+    margin-right: 0;
+}

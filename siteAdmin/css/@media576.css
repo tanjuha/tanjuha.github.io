@@ -14,8 +14,8 @@ body{
 
 /*header end*/
 .content{
-    margin: 10px;
-}
+     margin: 10px;
+ }
 /*first bloc*/
 .boxLike{
     display: flex;
@@ -23,7 +23,7 @@ body{
     justify-content: space-between;
 }
 .boxImage{
-   margin: 0 6px -1px 1px;
+    margin: 0 6px -1px 1px;
 }
 .boxImage > img{
     width: 100%;
@@ -41,6 +41,9 @@ body{
 }
 /*bloc icons end*/
 /*bloc general*/
+.boxDataCode{
+    justify-content: center;
+}
 .blocGeneralFirst{
     justify-content: center;
 }
@@ -73,6 +76,7 @@ body{
     margin: 5px 0 0 0;
 }
 .blocGeneralSecond{
+    flex-direction: column;
     justify-content: center;
     margin: 0 3px 0 3px;
 }

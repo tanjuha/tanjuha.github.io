@@ -2,7 +2,7 @@ body{
     background: yellow;
 }
 .contentBox{
-    flex:2;
+    height: 40px;
 }
 .blocGeneralFirst,.blocGeneralSecond{
     flex-wrap: wrap;
@@ -20,9 +20,15 @@ body{
     flex-direction: row;
     flex:2;
 }
-
+.boxInformation{
+    margin: 0 5px 4px 4px;
+}
 .infoContent{
     flex: 2;
+    margin-top: 0;
+}
+.boxDataCode{
+    margin-left: 2px;
 }
 .boxName{
     min-width: 224px;
@@ -33,4 +39,7 @@ body{
 }
 .containerStatusVideo{
     flex-direction: column;
+}
+.boxGeneral{
+    margin:3px 5px 0 0;
 }
