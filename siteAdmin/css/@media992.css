@@ -1,6 +1,3 @@
-/*body{*/
-    /*background: yellow;*/
-/*}*/
 
 .contentBox{
     height: 40px;
@@ -13,7 +10,6 @@
 .boxInformation{
     display: flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
     flex:2;
 }
 .informationBoxContent{
