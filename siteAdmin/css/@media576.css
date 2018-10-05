@@ -57,6 +57,8 @@
 }
 .blocGeneralFirst{
     justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 .boxGeneral{
     margin: 3px 5px 0 4px;
