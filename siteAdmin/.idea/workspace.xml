@@ -55,11 +55,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="@media576.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="@media576.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/@media576.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="@media992.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/@media992.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -109,13 +119,13 @@
         <option value="$PROJECT_DIR$/css/@media576min.css" />
         <option value="$PROJECT_DIR$/css/@media1366.css" />
         <option value="$PROJECT_DIR$/css/@media1920.css" />
-        <option value="$PROJECT_DIR$/css/@media992.css" />
         <option value="$PROJECT_DIR$/css/@media768.css" />
         <option value="$PROJECT_DIR$/css/@media1200.css" />
         <option value="$PROJECT_DIR$/js/openMenu.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/@media576.css" />
+        <option value="$PROJECT_DIR$/css/@media992.css" />
       </list>
     </option>
   </component>
@@ -211,12 +221,12 @@
       <workItem from="1538490536000" duration="6188000" />
       <workItem from="1538590787912" duration="27575000" />
       <workItem from="1538658441761" duration="20552000" />
-      <workItem from="1538748412042" duration="1132000" />
+      <workItem from="1538748412042" duration="1312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197552000" />
+    <option name="totallyTimeSpent" value="197732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -731,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/@media992.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/@media1920.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -816,6 +819,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/@media992.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
