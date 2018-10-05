@@ -11,9 +11,7 @@
  .menuBar, .formSearch, .logoIcon > span{
     display: none;
 }
- .menu-hamburger{
-     margin:0 5px 35px 10px;
- }
+
 .menuAllWidth{
     display: flex;
     justify-content: center;
