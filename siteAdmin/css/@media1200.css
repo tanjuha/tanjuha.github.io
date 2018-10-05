@@ -18,6 +18,9 @@ label,select, input[type=text], input[type=url]{
 .navBarTop{
     height: 70px;
 }
+form{
+    margin-left: 60px;
+}
 form > input[type=text]{
     font-size: 18px;
 }
@@ -25,16 +28,7 @@ form > input[type=text]{
     width:35px;
     height: 35px;
 }
-.menu-hamburger, .menu-hamburger:before, .menu-hamburger:after{
-    width: 25px;
-    height: 4px;
-}
-.menu-hamburger:before{
-    top:-7px;
-}
-.menu-hamburger:after{
-    top:7px;
-}
+
 .menuBar{
     width:97px;
 }

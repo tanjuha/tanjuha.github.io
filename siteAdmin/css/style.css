@@ -57,23 +57,28 @@ button{
 .menu-hamburger{
     position: relative;
     content:"";
-    border-radius: 10px;
-    width: 20px;
-    height: 3px;
-    background: #1d2939;
     cursor: pointer;
+    /*margin-right: 30px;*/
 }
-.menu-hamburger:before{
+.menu-hamburger>span:nth-child(1){
     position: absolute;
     content:"";
     width: 20px;
-    height: 3px;
     border-radius: 10px;
+    height: 3px;
     background: #1d2939;
     top: -6px ;
-    left:0;
 }
-.menu-hamburger:after{
+.menu-hamburger>span:nth-child(2){
+    position: absolute;
+    content:"";
+    width: 20px;
+    border-radius: 10px;
+    height: 3px;
+    background: #1d2939;
+    top: 0 ;
+}
+.menu-hamburger>span:nth-child(3){
     position: absolute;
     content:"";
     width: 20px;
@@ -104,7 +109,7 @@ form{
     border-right: 2px solid #1d2939 ;
     border-left: 2px solid #1d2939 ;
     padding: 0 20px 0 20px;
-    margin-left: 35px;
+    margin-left: 55px;
 }
 /*search end*/
 /*logo*/
