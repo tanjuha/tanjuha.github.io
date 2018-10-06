@@ -69,7 +69,7 @@
 }
 /*box general information*/
 .boxInformation{
-    margin: 0 4px 4px 4px;
+    margin: 0 5px 4px 3px;
 }
 /*box general information end*/
 /*bloc second*/
@@ -87,7 +87,7 @@
 .blocGeneralSecond{
     flex-direction: column;
     justify-content: center;
-    margin: 0 3px 0 3px;
+    margin: 0 4px 0 4px;
 }
 /*bloc second end*/
 /*containers forms*/

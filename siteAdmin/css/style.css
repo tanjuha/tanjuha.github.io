@@ -223,7 +223,7 @@ form{
     flex-direction: row;
     flex-wrap: wrap;
     width: 102px;
-    margin: 4px 0 1px 1px;
+    margin: 4px 0 3px 1px;
 }
 .h, .p{
     color:blue;
@@ -326,7 +326,7 @@ form{
     flex-direction: column;
     flex: 2;
     min-width: 200px;
-    margin: 5px 1px 0 1px;
+    margin: 4px 1px 0 1px;
 }
 .detailsGeneral{
     display: flex;
