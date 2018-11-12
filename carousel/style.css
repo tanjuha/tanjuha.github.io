@@ -21,13 +21,15 @@
     margin: 10px;
 }
 #prev, #next{
-	position: absolute;
+	position: relative;
     top: 150px;
     z-index: 1;
 }
 #prev{
-    left: 368px;
+    right: 282px;
+    top: 200px;
 }
 #next{
-    right: 367px;
+    left: 282px;
+    top: 165px;
 }
