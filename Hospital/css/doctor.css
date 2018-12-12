@@ -6,14 +6,9 @@ ul{
     padding: 0;
     margin: 0;
 }
-
 .container{
-    width: 60%;
     margin: 20px auto;
-    height: auto;
-    background-color: #fff;
 }
-
 .profile{
     background-color: #fff;
 }
