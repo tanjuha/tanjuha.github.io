@@ -1,0 +1,25 @@
+body{
+    background: #65aadd !important;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 60%;
+    margin: 20px auto;
+    height: 500px;
+    background-color: #fff;
+}
+
+.profile{
+    background-color: #fff;
+}
+.work_info{
+    background-color: #fafafa;
+}
+.work_schedule{
+    background: #fafafa;
+}

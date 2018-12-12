@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hospital</title>
+    <link rel="icon" href="favicon.ico">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/doctor.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <!--time picker-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="profile col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div>
+                    <img src="img/doctor-2.jpg" width="200" height="200" alt="doctor">
+                    <h3>Dr. Brooks Latshaw</h3>
+                    <span>Surgeon</span>
+                    <dl class="work_schedule">
+                        <dt>Mon-Fri</dt>
+                        <dd>10.00AM - 7.00PM</dd>
+                        <dt>Sat</dt>
+                        <dd>10.00AM - 3.00PM</dd>
+                        <dt>Sun</dt>
+                        <dd>Holiday</dd>
+                    </dl>
+                    <ul class="social_icon d-flex justify-content-around">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work_info col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <h3>Patients</h3>
+                <div class="patients row ">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                        <h6>Name</h6>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <h6>time</h6>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <h6>Action</h6>
+                    </div>
+                </div>
+                <ul class="row">
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2">Tom</li>
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-4 col-xl-4">
+                        <div class="form-group">
+                            <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker6"/>
+                                <div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-4 col-xl-4">
+                        <button type="button" class="btn btn-primary">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2">Tom</li>
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-4 col-xl-4">
+                        <div class="form-group">
+                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-4 col-xl-4">
+                        <button type="button" class="btn btn-primary">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2">Tom</li>
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-4 col-xl-4">
+                        <div class="form-group">
+                            <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                                <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-sm-6 col-md-2 col-lg-4 col-xl-4">
+                        <button type="button" class="btn btn-primary">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </li>
+                </ul><!--patients-->
+                <h3>Free time</h3>
+                <div class="form-group">
+                    <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker"/>
+                        <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Add patient</h3>
+                <form class="form-inline">
+                    <div class="form-group mb-2">
+                        <input type="password" class="form-control" placeholder="name">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="password" class="form-control" placeholder="time">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--time picker-->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/af.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+</body>
+</html>
