@@ -1,0 +1,49 @@
+body{
+    background: #32C69A !important;
+}
+ul{
+	font-size: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0!important;
+}
+h3{
+	margin: 0!important;
+}
+.bg-black-light{
+	background: #3C3F41;
+}
+.bg-gray-light{
+	background: #545657;
+}
+.tx-green{
+	color:#32c69a;
+}
+.tx-gray{
+	color:#A8A8A8;
+}
+.wd-50p{
+	width: 50%;
+}
+.pd-10{
+	padding: 10px;
+}
+.mg-10{
+	margin: 10px;
+}
+.mg-b-5{
+	margin-bottom: 5px;
+}
+.mg-b-10{
+	margin-bottom: 10px;
+}
+.container{
+    margin: 20px auto;
+}
+
+.work_info{
+    background-color: #fafafa;
+}
+.work_schedule{
+    background: #fafafa;
+}
