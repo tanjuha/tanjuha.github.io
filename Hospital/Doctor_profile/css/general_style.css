@@ -10,6 +10,12 @@
 .mg-l-50{
     margin-left: 50px;
 }
+.pd-10{
+    padding: 10px;
+}
+.ht-auto{
+    height: auto;
+}
 .ht-40{
     height: 40px;
 }
@@ -21,6 +27,9 @@
 }
 .wd-200{
     width: 200px;
+}
+.wd-800{
+    width: 800px;
 }
 .line-h-07{
     line-height: 0.7;
