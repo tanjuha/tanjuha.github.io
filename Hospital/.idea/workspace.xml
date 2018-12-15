@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49780b61-38aa-4abc-a20f-075a05ebf6dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patient/patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/patient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../schedule_test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule_test/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="49780b61-38aa-4abc-a20f-075a05ebf6dc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +22,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Doctor_profile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
+            <state relative-caret-position="111">
               <caret line="126" column="102" selection-start-line="126" selection-start-column="102" selection-end-line="126" selection-end-column="102" />
               <folding>
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -105,7 +99,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1016" />
     <option name="width" value="357" />
     <option name="height" value="735" />
@@ -205,18 +199,17 @@
       <workItem from="1544661354672" duration="820000" />
       <workItem from="1544724535155" duration="24000" />
       <workItem from="1544731347059" duration="1304000" />
-      <workItem from="1544824085613" duration="9821000" />
+      <workItem from="1544824085613" duration="10096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16229000" />
+    <option name="totallyTimeSpent" value="16504000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16187595" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16187595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -229,7 +222,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32405892" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32405892" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -286,7 +279,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctor_profile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="111">
           <caret line="126" column="102" selection-start-line="126" selection-start-column="102" selection-end-line="126" selection-end-column="102" />
           <folding>
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
