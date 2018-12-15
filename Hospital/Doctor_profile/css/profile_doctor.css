@@ -1,0 +1,17 @@
+/*general*/
+a{
+    text-decoration: none!important;
+}
+.border{
+    border:1px solid #EAEAEA;
+}
+.mg-l-50{
+  margin-left: 50px;
+}
+.wd-50p{
+    width:50%;
+}
+/*genera end*/
+.card{
+    margin-bottom: 10px;
+}
