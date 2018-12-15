@@ -12,23 +12,64 @@
     <link rel="stylesheet" href="css/general_style.css"><!-- general style -->
     <link href="css/style.css" rel="stylesheet"><!-- style time picker -->
     <link href="css/timepicki.css" rel="stylesheet"><!-- style time picker -->
+    <link rel="stylesheet" href="css/patient_profile.css"><!-- patient style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"><!-- font family -->
   </head>
   <body>
 
-   <div class="inner cover indexpicker">
-        <input class="form-control" id="timepicker1" type="text" name="timepicker1" placeholder="Pick start time..."/>
-   </div>
-   <!-- time picker -->
+  <div class="container border pd-10">
+      <div class="portfolio-patient d-flex flex-wrap">
+          <div class="mg-10 tx-left">
+              <img class="img-patient wd-300" src="images/patient.jpg" alt="patient">
+              <h3>Bob Monty</h3>
+              <span class="tx-green">Patient</span>
+          </div>
+          <div class="list-procedure mg-l-20 flex-2">
+              <h4 class="tx-left">Procedures</h4>
+              <div class="table-procedure d-flex flex-column">
+                  <ul class="d-flex flex-row">
+                      <li class="procedure"><h5 class="tx-green">Procedure</h5></li>
+                      <li><h5 class="tx-green">Time</h5></li>
+                      <li><h5 class="tx-green">Doctor Name</h5></li>
+                  </ul>
+                  <ul class="d-flex flex-row">
+                      <li class="procedure">Heard surgery</li>
+                      <li>10:00 - 16:30</li>
+                      <li>Dr. Brooks Latshaw</li>
+                  </ul>
+                  <ul class="d-flex flex-row">
+                      <li class="procedure">Intravenous injection</li>
+                      <li>17:00 - 17:10</li>
+                      <li>Dr. Tom Mor</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div>
+          <h2>New procedure</h2>
+          <div class="new-procedure d-flex justify-content-center">
+              <span class="mg-t-3">Procedure</span>
+              <div class=" inner cover indexpicker">
+                  <input class="form-control" id="timepicker-start" type="text" name="timepicker" placeholder="Pick start time..."/>
+              </div><!--time picker-->
+              <div class=" inner cover indexpicker">
+                  <input class="form-control" id="timepicker-finish" type="text" name="timepicker" placeholder="Pick finish time..."/>
+              </div><!--time picker-->
+          </div>
+      </div>
+  </div>
 
-
-
-    <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
     <script src="js/timepicki.js"></script>
     <script>
-	$('#timepicker1').timepicki({
-	max_hour_value: 24,
-	show_meridian: false
+	$('#timepicker-start').timepicki({
+	    max_hour_value: 24,
+	    show_meridian: false
 	});
+    $('#timepicker-finish').timepicki({
+        max_hour_value: 24,
+        show_meridian: false
+    });
     </script><!-- time picker script-->
   </body>
 </html>
