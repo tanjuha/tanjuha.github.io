@@ -1,17 +1,42 @@
 /*general*/
-a{
-    text-decoration: none!important;
+body{
+    color:#3C3F41;
+    font-family: 'Roboto', sans-serif;
 }
 .border{
     border:1px solid #EAEAEA;
 }
-.mg-l-50{
-  margin-left: 50px;
+h4{
+    font-size: 16px;
 }
-.wd-50p{
-    width:50%;
+.tx-green{
+    color:#32C69A;
 }
 /*genera end*/
+/*card*/
 .card{
     margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
 }
+
+.box-shadow{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+}
+.bg-card{
+    background-color: #32c69aad;
+}
+.bg-card:hover{
+    background-color: rgba(50, 198, 154, 0.56);
+}
+/*card end*/
+/*form*/
+.form-control{
+    border:1px solid #EAEAEA ;
+    padding:0 10px;
+}
+.form-control:focus{
+    outline: none;
+    border: 1px solid #80bdff;
+}
+/*form end*/
