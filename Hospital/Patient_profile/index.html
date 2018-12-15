@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Timepicki is a light weight jQuery Time Picker plugin for using in form submission websites.">
+    <meta name="keywords" content="timepicki, timepicker, time, jquery, plugins">
+    <meta name="author" content="senthil2rajan">
+    <title>Patient Portfolio</title>
+
+    <link rel="stylesheet" href="css/general_style.css"><!-- general style -->
+    <link href="css/style.css" rel="stylesheet"><!-- style time picker -->
+    <link href="css/timepicki.css" rel="stylesheet"><!-- style time picker -->
+  </head>
+  <body>
+
+   <div class="inner cover indexpicker">
+        <input class="form-control" id="timepicker1" type="text" name="timepicker1" placeholder="Pick start time..."/>
+   </div>
+   <!-- time picker -->
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/timepicki.js"></script>
+    <script>
+	$('#timepicker1').timepicki({
+	max_hour_value: 24,
+	show_meridian: false
+	});
+    </script><!-- time picker script-->
+  </body>
+</html>
+
