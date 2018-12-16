@@ -19,44 +19,8 @@ p{
 span{
     font-size: 14px;
 }
-.tx-blue{
-    color:#1696E7;
-}
-.mg-t-20{
-    margin-top:20px;
-}
-.mg-r-10{
-    margin-right: 10px;
-}
-.mg-b-10{
-    margin-bottom: 10px;
-}
-.mg-l-10{
-    margin-left: 10px;
-}
-.mg-l-50{
-    margin-left: 50px;
-}
-.ht-auto{
-    height: auto;
-}
-.ht-40{
-    height: 40px;
-}
-.ht-200{
-    height: 200px;
-}
-.wd-200{
-    width: 200px;
-}
-.wd-800{
-    width: 800px;
-}
-.line-h-07{
-    line-height: 0.7;
-}
 .container{
-    margin:100px auto;
+    margin:50px auto;
     width:90%;
 }
 .profile{
@@ -64,65 +28,6 @@ span{
     box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
     padding: 20px 30px;
 }
-/*flex*/
-.d-flex{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-.flex-wrap{
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.justify-content-center{
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-.justify-content-around{
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-}
-.align-items-center{
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-/*flex end*/
-/*card*/
-.card{
-    margin-bottom: 10px;
-    position: relative;
-    box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
-}
-.card:hover:after{
-    position: absolute;
-    content:"";
-    width: 100%;
-    height: 100%;
-    top:0;
-    background-color: rgba(0, 0, 0, 0.09);
-}
-.card-text{
-    color:#fff;
-    font-size: 20px;
-}
-.bg-card{
-    background-color: #1696E7;
-    box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
-}
-/*card end*/
-/*form*/
-.form-control{
-    border:1px solid #EAEAEA ;
-    padding:5px 10px;
-    height: 30px;
-}
-.form-control:focus{
-    outline: none;
-    border: 1px solid #80bdff;
-}
-/*form end*/
 /*calendar*/
 .light{
     background-color: #fff;
@@ -204,6 +109,101 @@ span{
     color:#363b41;
 }
 /*calender end*/
+/*card*/
+.card{
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
+}
+.card:hover:after{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+.card-text{
+    color:#fff;
+    font-size: 20px;
+}
+.bg-card{
+    background-color: #1696E7;
+    box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
+}
+/*card end*/
+/*form*/
+.form-control{
+    border:1px solid #EAEAEA ;
+    padding:5px 10px;
+    height: 30px;
+}
+.form-control:focus{
+    outline: none;
+    border: 1px solid #80bdff;
+}
+/*form end*/
+.tx-blue{
+    color:#1696E7;
+}
+.mg-t-20{
+    margin-top:20px;
+}
+.mg-r-10{
+    margin-right: 10px;
+}
+.mg-b-10{
+    margin-bottom: 10px;
+}
+.mg-l-10{
+    margin-left: 10px;
+}
+.mg-l-50{
+    margin-left: 50px;
+}
+.ht-auto{
+    height: auto;
+}
+.ht-40{
+    height: 40px;
+}
+.ht-200{
+    height: 200px;
+}
+.wd-200{
+    width: 200px;
+}
+.wd-800{
+    width: 800px;
+}
+.line-h-07{
+    line-height: 0.7;
+}
+/*flex*/
+.d-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flex-wrap{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.justify-content-center{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.justify-content-around{
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.align-items-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/*flex end*/
 @media screen and (max-width: 800px) {
     .container{
         flex-wrap: wrap;
