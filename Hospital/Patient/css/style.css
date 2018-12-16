@@ -90,6 +90,9 @@ span{
     background-color: #A39D9E;
     box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
 }
+.dot_active{
+    background-color: #1696E7;
+}
 .ei_Title{
     margin-left:10px;
     color:#363b41;
