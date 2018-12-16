@@ -4,58 +4,297 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hospital</title>
-    <!--bootstrap-->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <title>Doctor profile</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"><!-- font family -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            color:#363b41;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        h3,h4{
+            margin: 0;
+        }
+        p{
+            margin: 5px 0 ;
+            font-size: 14px;
+        }
+        span{
+            font-size: 14px;
+        }
+        .container{
+            margin:50px auto;
+            width:90%;
+        }
+        .profile{
+            background: #fff;
+            box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
+            padding: 20px 30px;
+        }
+        /*calendar*/
+        .light{
+            background-color: #fff;
+        }
+        .calendar{
+            width:70%;
+            box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
+            padding: 20px 30px;
+            display: inline-block;
+        }
+        .calendar_header{
+            border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+        }
+        .header_copy{
+            color: #A39D9E;
+            font-size:20px;
+        }
+        .calendar_plan{
+            margin:20px 0 40px;
+        }
+        .cl_plan{
+            width:100%;
+            height: 140px;
+            background-image: linear-gradient(-222deg, #1696E7, rgba(22, 150, 231, 0.67));
+            box-shadow: 0 0 52px -18px rgba(0, 0, 0, 0.75);
+            padding:30px;
+            color:#fff;
+        }
+        .cl_copy{
+            font-size:20px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        .calendar_events, p{
+            color:#A39D9E;
+        }
+
+        .ce_title{
+            font-size:14px;
+        }
+        .event_item{
+            margin: 18px 0;
+            padding:5px;
+            cursor: pointer;
+        }
+        .event_item:hover{
+            background-image: linear-gradient(-222deg, #1696E7, rgba(22, 150, 231, 0.67));
+            box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
+        }
+        .event_item:hover .ei_Dot{
+            background-color: #fff;
+        }
+        .event_item:hover .ei_Title, .event_item:hover .ei_Copy {
+            color: #fff;
+        }
+        .ei_Dot,.ei_Title{
+            display:inline-block;
+        }
+        .ei_Dot{
+            border-radius:50%;
+            width:10px;
+            height: 10px;
+            background-color: #A39D9E;
+            box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
+        }
+        .dot_active{
+            background-color: #1696E7;
+        }
+        .ei_Title{
+            margin-left:10px;
+            color:#363b41;
+        }
+        .ei_Copy{
+            font-size:20px;
+            margin-left:27px;
+        }
+
+        .header_title,.ce_title{
+            color:#363b41;
+        }
+        /*calender end*/
+        /*card*/
+        .card{
+            margin-bottom: 10px;
+            position: relative;
+            box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
+        }
+        .card:hover:after{
+            position: absolute;
+            content:"";
+            width: 100%;
+            height: 100%;
+            top:0;
+            background-color: rgba(0, 0, 0, 0.09);
+        }
+        .card-text{
+            color:#fff;
+            font-size: 20px;
+        }
+        .bg-card{
+            background-color: #1696E7;
+            box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
+        }
+        /*card end*/
+        /*form*/
+        .form-control{
+            border:1px solid #EAEAEA ;
+            padding:5px 10px;
+            height: 30px;
+        }
+        .form-control:focus{
+            outline: none;
+            border: 1px solid #80bdff;
+        }
+        /*form end*/
+        .tx-blue{
+            color:#1696E7;
+        }
+        .mg-t-20{
+            margin-top:20px;
+        }
+        .mg-r-10{
+            margin-right: 10px;
+        }
+        .mg-b-10{
+            margin-bottom: 10px;
+        }
+        .mg-l-10{
+            margin-left: 10px;
+        }
+        .mg-l-50{
+            margin-left: 50px;
+        }
+        .ht-auto{
+            height: auto;
+        }
+        .ht-40{
+            height: 40px;
+        }
+        .ht-200{
+            height: 200px;
+        }
+        .wd-200{
+            width: 200px;
+        }
+        .wd-800{
+            width: 800px;
+        }
+        .line-h-07{
+            line-height: 0.7;
+        }
+        /*flex*/
+        .d-flex{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .flex-wrap{
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        .justify-content-center{
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        .justify-content-around{
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+        }
+        .align-items-center{
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        /*flex end*/
+        @media screen and (max-width: 800px) {
+            .container{
+                flex-wrap: wrap;
+                margin-top: 30px;
+            }
+            .calendar{
+                width: 90%;
+            }
+            .profile{
+                width:90%;
+                margin: 20px!important;
+            }
+            .info-doctor{
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="d-flex justify-content-center bg-white col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <div class="mg-10">
-                    <img src="img/patient.jpg" width="300"  alt="patient">
-                    <h3>Bob</h3>
-                </div>
+<div class="container d-flex justify-content-center">
+    <div class="calendar light">
+        <div class="d-flex">
+            <img src="img/patient.jpg" width="200" height="200" alt="patient">
+            <div class="mg-l-10">
+                <h4 class = "header_title">General information:</h4>
+                <p><span class="tx-blue">27</span> years old,<span class="tx-blue"> Male</span></p>
+                <p> Live in <span class="tx-blue">Chernivtsi, UA</span> </p>
+                <p style="margin-bottom: 15px">Diagnosis: broken leg</p>
+                <h4 class = "header_title">Biography:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur cumque ea ipsum magnam officiis quam quas quo ratione ut.</p>
             </div>
-            <div class="work_info col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <h3>Procedures</h3>
-                <div class="patients row ">
-                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <h6>Procedure</h6>
-                    </div>
-                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <h6>Time</h6>
-                    </div>
-                    <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-4">
-                        <h6>Doctor Name</h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <span>Heard surgery</span>
-                    </div>
-                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <span>10:00 AM - 04:30 PM</span>
-                    </div>
-                    <div class="col-4 col-sm-4 col-md-2 col-lg-4 col-xl-4">
-                        <span>Dr. Brooks Latshaw</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <span>Intravenous injection</span>
-                    </div>
-                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <span>05:00 AM - 05:10 PM</span>
-                    </div>
-                    <div class="col-4 col-sm-4 col-md-2 col-lg-4 col-xl-4">
-                        <span>Dr. Tom Mor</span>
-                    </div>
-                </div>
+
+        </div>
+        <div class="calendar_header">
+            <h1 class = "header_title">Bob Monty</h1>
+            <p class="header_copy"> Calendar Plan</p>
+        </div>
+        <div class="calendar_plan">
+            <div class="cl_plan">
+                <div class="cl_title">Today</div>
+                <div class="cl_copy">22nd  December  2018</div>
             </div>
         </div>
-    </div>
+        <div class="calendar_events">
+            <p class="ce_title">Upcoming Events</p>
+            <div class="event_item">
+                <div class="ei_Dot"></div>
+                <div class="ei_Title">15:30 am</div>
+                <div class="ei_Copy">Dr. Casper Finney</div>
+            </div>
+            <div class="event_item">
+                <div class="ei_Dot"></div>
+                <div class="ei_Title">15:30 am</div>
+                <div class="ei_Copy">Dr. Casper Finney</div>
+            </div>
+            <div class="event_item">
+                <div class="ei_Dot"></div>
+                <div class="ei_Title">15:30 am</div>
+                <div class="ei_Copy">Dr. Casper Finney</div>
+            </div>
+            <div class="event_item">
+                <div class="ei_Dot"></div>
+                <div class="ei_Title">14:30 am</div>
+                <div class="ei_Copy">Dr. Elise Young</div>
+            </div>
+            <div class="event_item">
+                <div class="ei_Dot"></div>
+                <div class="ei_Title">15:30 am</div>
+                <div class="ei_Copy">Dr. Casper Finney</div>
+            </div>
+        </div>
+    </div><!-- calendar -->
+</div>
 </body>
 </html>

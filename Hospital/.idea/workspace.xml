@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="49780b61-38aa-4abc-a20f-075a05ebf6dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Doctor_profile/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor_profile/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/img/doctor-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/patient.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +17,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Doctor_profile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="238">
+              <caret line="62" column="29" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Doctor_profile/css/style.css">
+        <entry file="file://$PROJECT_DIR$/Patient/patient.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+            <state relative-caret-position="226">
+              <caret line="249" column="63" selection-start-line="249" selection-start-column="63" selection-end-line="249" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Patient_profile/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721">
+              <caret line="43" column="23" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="43" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -34,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="40" />
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -75,6 +86,8 @@
       <find>bg-card</find>
       <find>info-doctor</find>
       <find>profile</find>
+      <find>calen</find>
+      <find>ei_Copy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,7 +99,6 @@
         <option value="$PROJECT_DIR$/doctor.html" />
         <option value="$PROJECT_DIR$/Doctor/dsd.html" />
         <option value="$PROJECT_DIR$/Doctor/doctor.html" />
-        <option value="$PROJECT_DIR$/Patient/patient.html" />
         <option value="$PROJECT_DIR$/Doctor_profile/css/profyle_doctor.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/Doctor_profile/css/reset.css" />
@@ -107,6 +119,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Doctor_profile/index.html" />
         <option value="$PROJECT_DIR$/Doctor_profile/css/style.css" />
+        <option value="$PROJECT_DIR$/Patient/patient.html" />
       </list>
     </option>
   </component>
@@ -132,6 +145,27 @@
             <path>
               <item name="Hospital" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hospital" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital" type="462c0819:PsiDirectoryNode" />
+              <item name="Doctor_profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital" type="462c0819:PsiDirectoryNode" />
+              <item name="Patient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital" type="462c0819:PsiDirectoryNode" />
+              <item name="Patient" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital" type="462c0819:PsiDirectoryNode" />
+              <item name="Patient_profile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,12 +232,12 @@
       <workItem from="1544731347059" duration="1304000" />
       <workItem from="1544824085613" duration="30480000" />
       <workItem from="1544895629392" duration="15633000" />
-      <workItem from="1544970499275" duration="3666000" />
+      <workItem from="1544970499275" duration="7668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56187000" />
+    <option name="totallyTimeSpent" value="60189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -291,13 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patient/patient.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Patient_profile/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -331,31 +358,41 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctor_profile/cart.html" />
-    <entry file="file://$PROJECT_DIR$/Patient_profile/index.html">
+    <entry file="file://$PROJECT_DIR$/Doctor_profile/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        <state relative-caret-position="170">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patient/img/doctor-2.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="40" />
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patient_profile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="43" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctor_profile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="238">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Doctor_profile/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Patient/patient.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+        <state relative-caret-position="226">
+          <caret line="249" column="63" selection-start-line="249" selection-start-column="63" selection-end-line="249" selection-end-column="63" />
         </state>
       </provider>
     </entry>
