@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor profile</title>
+    <link rel="icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"><!-- font family -->
 	<link rel="stylesheet" href="css/filter.css"><!-- filter -->
 	<link rel="stylesheet" href="css/style.css">
@@ -21,6 +22,16 @@
 		ul{
 			padding: 0;
 		}
+        h3,h4{
+            margin: 0;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        span{
+            font-size: 14px;
+        }
 		.container{
 			margin:100px auto;
 			width:90%;
@@ -57,7 +68,7 @@
 			margin: 20px 0;
 			display: inline-block;
 		}
-		.calendar_events{
+		.calendar_events, p{
 			color:#A39D9E;
 		}
 
@@ -97,7 +108,7 @@
 			color:#363b41;
 		}
 		.ei_Copy{
-			font-size:12px;
+			font-size:14px;
 			margin-left:27px;
 		}
 
@@ -115,6 +126,9 @@
 		.tx-green{
 			color:#1696E7;
 		}
+        .mg-t-20{
+            margin-top:20px;
+        }
 		.mg-r-10{
 			margin-right: 10px;
 		}
@@ -186,13 +200,19 @@
 		.card{
 			margin-bottom: 10px;
 			position: relative;
-			z-index: 1;
+            box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
 		}
+        .card:hover:after{
+            position: absolute;
+            content:"";
+            width: 100%;
+            height: 100%;
+            top:0;
+            background-color: rgba(0, 0, 0, 0.09);
+        }
 		.card-text{
 			color:#fff;
-		}
-		.box-shadow{
-			box-shadow: 0 0 35px -16px rgba(0,0,0,0.75);
+            font-size: 20px;
 		}
 		.bg-card{
 			background-color: #1696E7;
@@ -203,7 +223,7 @@
 		.form-control{
 			border:1px solid #EAEAEA ;
 			padding:5px 10px;
-			height: 40px;
+			height: 30px;
 		}
 		.form-control:focus{
 			outline: none;
@@ -211,8 +231,15 @@
 		}
 		/*form end*/
 		@media screen and (max-width: 800px) {
+            .container{
+                flex-wrap: wrap;
+                margin-top: 30px;
+            }
+            .calendar{
+                width: 90%;
+            }
 			.profile{
-				width:auto!important;
+				width:90%;
 				margin: 20px!important;
 			}
 			.info-doctor{
@@ -226,19 +253,18 @@
 			}
 		}
 	</style><!-- style portfolio doctor -->
-	<title>Doctor profile</title>
 </head>
 <body>
 <div class="container d-flex justify-content-center">
 	<div class="calendar light">
 		<div class="calendar_header">
-			<h1 class = "header_title">Welcome Back</h1>
+			<h1 class = "header_title">Dr. Everett Holder</h1>
 			<p class="header_copy"> Calendar Plan</p>
 		</div>
 		<div class="calendar_plan">
 			<div class="cl_plan">
 				<div class="cl_title">Today</div>
-				<div class="cl_copy">22nd  April  2018</div>
+				<div class="cl_copy">22nd  December  2018</div>
 			</div>
 		</div>
 		<div class="calendar_events">
@@ -246,38 +272,38 @@
 			<div class="event_item">
 				<div class="ei_Dot dot_active"></div>
 				<div class="ei_Title">10:30 am</div>
-				<div class="ei_Copy">Monday briefing with the team</div>
+				<div class="ei_Copy">Mr. Bob Monty</div>
 			</div>
 			<div class="event_item">
 				<div class="ei_Dot"></div>
 				<div class="ei_Title">12:00 pm</div>
-				<div class="ei_Copy">Lunch for with the besties</div>
+				<div class="ei_Copy">Mr. Bob Monty</div>
 			</div>
 			<div class="event_item">
 				<div class="ei_Dot"></div>
 				<div class="ei_Title">13:00 pm</div>
-				<div class="ei_Copy">Meet with the client for final design <br> @foofinder</div>
+				<div class="ei_Copy">Mr. Bob Monty</div>
 			</div>
 			<div class="event_item">
 				<div class="ei_Dot"></div>
 				<div class="ei_Title">14:30 am</div>
-				<div class="ei_Copy">Plan event night to inspire students</div>
+				<div class="ei_Copy">Ms. Elise Young</div>
 			</div>
 			<div class="event_item">
 				<div class="ei_Dot"></div>
 				<div class="ei_Title">15:30 am</div>
-				<div class="ei_Copy">Add some more events to the calendar</div>
+				<div class="ei_Copy">Ms. Casper Finney</div>
 			</div>
 		</div>
 	</div><!-- calendar -->
 	<div class="profile mg-l-50 wd-800 ht-auto">
 		<div class="info-doctor d-flex">
 			<div>
-				<img class="wd-200 ht-200" src="img/doctor-2.jpg" alt="doctor"><!-- size 200x200-->
-				<h3 class="">Dr. Brooks Latshaw</h3>
+				<img class="wd-200 ht-200" src="img/doctor.jpg" alt="doctor"><!-- size 200x200-->
+				<h3 class="">Dr. Everett Holder</h3>
 				<span class="tx-green">Surgeon</span>
 			</div>
-			<div style="margin-left: 10px; margin-top: 20px;">
+			<div class="mg-l-10 mg-t-20">
 				<h4>Biography:</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis cupiditate, deserunt ex minima quas sed? Cupiditate facere iure nulla porro vel! Ab consectetur corporis deleniti, eveniet fugit iure libero minus, molestiae nesciunt, officiis pariatur perspiciatis quidem sapiente sint ullam velit vero. Animi distinctio nam neque, similique soluta ut voluptate!</p>
 			</div>
@@ -285,38 +311,38 @@
 		<div>
 			<div class="d-flex mg-b-10 justify-content-center flex-wrap align-items-center">
 				<h2 class="mg-r-10">All patients </h2>
-				<input class="form-control" onkeyup="funFilter()"  id="inputFilter" type="text" placeholder="Search" >
+				<input class="form-control" onkeyup="funFilter()"  id="inputFilter" type="text" placeholder="Search..." >
 			</div><!-- search patient -->
 			<ul id="ulFilter" class="d-flex flex-wrap justify-content-around">
 				<li>
-					<div class="card box-shadow line-h-07">
+					<div class="card line-h-07">
 						<img class="card-img-top" src="https://picsum.photos/230/180/?random=1" alt="patient"><!-- size 230x180-->
-						<div class="card-body bg-card ht-40 d-flex align-items-center">
-							<span class="card-text event-name mg-l-10">Bob</span>
+						<div class="bg-card ht-40 d-flex align-items-center">
+							<span class="card-text mg-l-10">Bob</span>
 						</div>
 					</div>
 				</li><!-- card patient -->
 				<li>
-					<div class="card box-shadow line-h-07">
+					<div class="card line-h-07">
 						<img class="card-img-top" src="https://picsum.photos/230/180/?random=2" alt="patient"><!-- size 230x180-->
-						<div class="card-body bg-card ht-40 d-flex align-items-center">
-							<span class="card-text event-name mg-l-10">Sem</span>
+						<div class="bg-card ht-40 d-flex align-items-center">
+							<span class="card-text mg-l-10">Sem</span>
 						</div>
 					</div>
 				</li><!-- card patient -->
 				<li>
-					<div class="card box-shadow line-h-07">
+					<div class="card line-h-07">
 						<img class="card-img-top" src="https://picsum.photos/230/180/?random=3" alt="patient"><!-- size 230x180-->
-						<div class="card-body bg-card ht-40 d-flex align-items-center">
-							<span class="card-text event-name mg-l-10">Nem</span>
+						<div class="bg-card ht-40 d-flex align-items-center">
+							<span class="card-text mg-l-10">Nem</span>
 						</div>
 					</div>
 				</li><!-- card patient -->
 				<li>
-					<div class="card box-shadow line-h-07">
-						<img class="card-img-top" src="https://picsum.photos/230/180/?random=3" alt="patient"><!-- size 230x180-->
-						<div class="card-body bg-card ht-40 d-flex align-items-center">
-							<span class="card-text event-name mg-l-10">Nem</span>
+					<div class="card line-h-07">
+						<img class="card-img-top" src="https://picsum.photos/230/180/?random=4" alt="patient"><!-- size 230x180-->
+						<div class="bg-card ht-40 d-flex align-items-center">
+							<span class="card-text mg-l-10">Nem</span>
 						</div>
 					</div>
 				</li><!-- card patient -->
