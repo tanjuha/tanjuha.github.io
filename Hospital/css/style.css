@@ -1,5 +1,5 @@
 body{
-    background: #32C69A !important;
+    background: #fafafa !important;
 }
 ul{
 	font-size: 12px;
@@ -10,14 +10,17 @@ ul{
 h3{
 	margin: 0!important;
 }
+.bg-blue{
+	background: #1696E7;
+}
 .bg-black-light{
 	background: #3C3F41;
 }
 .bg-gray-light{
 	background: #545657;
 }
-.tx-green{
-	color:#32c69a;
+.tx-blue{
+	color:#1696E7;
 }
 .tx-gray{
 	color:#A8A8A8;
