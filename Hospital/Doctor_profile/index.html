@@ -7,8 +7,9 @@
     <title>Doctor profile</title>
     <link rel="icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"><!-- font family -->
-	<link rel="stylesheet" href="css/filter.css"><!-- filter -->
 	<link rel="stylesheet" href="css/style.css">
+	<link href="css/style.css" rel="stylesheet"><!-- style time picker -->
+	<link href="css/timepicki.css" rel="stylesheet"><!-- style time picker -->
 </head>
 <body>
 <div class="container d-flex justify-content-center">
@@ -55,58 +56,45 @@
 	<div class="profile mg-l-50 wd-800 ht-auto">
 		<div class="info-doctor d-flex">
 			<div>
-				<img class="wd-200 ht-200" src="img/doctor.jpg" alt="doctor"><!-- size 200x200-->
+				<img class="wd-200 ht-200" src="images/doctor.jpg" alt="doctor"><!-- size 200x200-->
 				<h3 class="">Dr. Everett Holder</h3>
-				<span class="tx-blue">Surgeon</span>
+				<span class="tx-blue">Surgeon</span>		
 			</div>
 			<div class="mg-l-10 mg-t-20">
 				<h4>Biography:</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis cupiditate, deserunt ex minima quas sed? Cupiditate facere iure nulla porro vel! Ab consectetur corporis deleniti, eveniet fugit iure libero minus, molestiae nesciunt, officiis pariatur perspiciatis quidem sapiente sint ullam velit vero. Animi distinctio nam neque, similique soluta ut voluptate!</p>
 			</div>
 		</div><!-- info -->
-		<div>
-			<div class="d-flex mg-b-10 justify-content-center flex-wrap align-items-center">
-				<h2 class="mg-r-10">All patients </h2>
-				<input class="form-control" onkeyup="funFilter()"  id="inputFilter" type="text" placeholder="Search..." >
-			</div><!-- search patient -->
-			<ul id="ulFilter" class="d-flex flex-wrap justify-content-around">
-				<li>
-					<div class="card line-h-07">
-						<img class="card-img-top" src="https://picsum.photos/230/180/?random=1" alt="patient"><!-- size 230x180-->
-						<div class="bg-card ht-40 d-flex align-items-center">
-							<span class="card-text mg-l-10">Bob</span>
-						</div>
-					</div>
-				</li><!-- card patient -->
-				<li>
-					<div class="card line-h-07">
-						<img class="card-img-top" src="https://picsum.photos/230/180/?random=2" alt="patient"><!-- size 230x180-->
-						<div class="bg-card ht-40 d-flex align-items-center">
-							<span class="card-text mg-l-10">Sem</span>
-						</div>
-					</div>
-				</li><!-- card patient -->
-				<li>
-					<div class="card line-h-07">
-						<img class="card-img-top" src="https://picsum.photos/230/180/?random=3" alt="patient"><!-- size 230x180-->
-						<div class="bg-card ht-40 d-flex align-items-center">
-							<span class="card-text mg-l-10">Nem</span>
-						</div>
-					</div>
-				</li><!-- card patient -->
-				<li>
-					<div class="card line-h-07">
-						<img class="card-img-top" src="https://picsum.photos/230/180/?random=4" alt="patient"><!-- size 230x180-->
-						<div class="bg-card ht-40 d-flex align-items-center">
-							<span class="card-text mg-l-10">Nem</span>
-						</div>
-					</div>
-				</li><!-- card patient -->
-			</ul>
-		</div><!-- patients list -->
+		<div class="d-flex flex-column align-items-center mg-t-20">
+			<h2>New procedure</h2>
+			<div class="new-procedure d-flex justify-content-center align-items-center	">
+				<span class="mg-t-3 mg-r-10">Procedure</span>
+				<div class=" inner cover indexpicker mg-r-10">
+					<form action="">
+						<input class="form-control" id="timepicker-start" type="text" name="timepicker" placeholder="Pick start time..."/>
+					</form>
+				</div><!--time picker-->
+				<div class=" inner cover indexpicker">
+					<form action="">
+						<input class="form-control" id="timepicker-finish" type="text" name="timepicker" placeholder="Pick finish time..."/>
+					</form>
+				</div><!--time picker-->
+			</div>
+		</div>
 	</div><!-- profile doctor-->
 
-	<script src="js/filter.js"></script><!-- filter -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/timepicki.js"></script>
+	<script>
+		$('#timepicker-start').timepicki({
+			max_hour_value: 24,
+			show_meridian: false
+		});
+		$('#timepicker-finish').timepicki({
+			max_hour_value: 24,
+			show_meridian: false
+		});
+	</script><!-- time picker script-->
 </div>
 </body>
 </html>

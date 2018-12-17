@@ -186,6 +186,9 @@ span{
     display: -ms-flexbox;
     display: flex;
 }
+.flex-column{
+    flex-direction: column;
+}
 .flex-wrap{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
