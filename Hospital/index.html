@@ -12,16 +12,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <!--fontawesome-->
 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- general style -->
+    <link rel="stylesheet" href="css/style.css"><!-- general style -->
 
+    <link rel="stylesheet" href="css/filter.css"><!-- filter -->
     <style>
+        .mg-t-20{
+            margin-top: 20px;
+        }
+        .mg-r-10{
+            margin-right: 10px;
+        }
+        .wd-170{
+            width: 170px;
+        }
         .nav-link{
             font-size: 15px;
         }
         .navbar-dark .navbar-nav .nav-link{
             color:#fff;
         }
+        .form-control:focus{
+            box-shadow:none;
+        }
+        .card{
+            border-radius: 0;
+        }
+
     </style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
@@ -38,7 +54,6 @@
     </ul>
 </nav>
 <section>
-    <div style="width: 100%; height: 300px;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -64,13 +79,47 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
-    </div>
+    </div><!-- carousel -->
+    <div>
+        <div class="d-flex mg-b-10 mg-t-20 justify-content-center flex-wrap align-items-center">
+            <h2 class="mg-r-10">All doctors </h2>
+            <input class="form-control wd-170" style="border-radius: 0; height: 35px;" onkeyup="funFilter()"  id="inputFilter" type="text" placeholder="Search..." >
+        </div><!-- search patient -->
+        <ul id="ulFilter" class="d-flex flex-wrap justify-content-around">
+            <li>
+                <div class="card line-h-07">
+                    <img class="card-img-top" src="https://picsum.photos/230/180/?random=1" alt="patient"><!-- size 230x180-->
+                </div>
+            </li><!-- card patient -->
+            <li>
+                <div class="card line-h-07">
+                    <img class="card-img-top" src="https://picsum.photos/230/180/?random=2" alt="patient"><!-- size 230x180-->
+                </div>
+            </li><!-- card patient -->
+            <li>
+                <div class="card line-h-07">
+                    <img class="card-img-top" src="https://picsum.photos/230/180/?random=3" alt="patient"><!-- size 230x180-->
+                </div>
+            </li><!-- card patient -->
+            <li>
+                <div class="card line-h-07">
+                    <img class="card-img-top" src="https://picsum.photos/230/180/?random=4" alt="patient"><!-- size 230x180-->
+                </div>
+            </li><!-- card patient -->
+        </ul>
+    </div><!-- doctor list -->
 </section>
+<footer style="width: 100%; height: 60px; background: #1696E7; color: #fff;" class="d-flex align-items-center justify-content-around">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-google-plus-g"></i>
+</footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- bootstrap js -->
 
+<script src="js/filter.js"></script><!-- filter -->
 </body>
 </html>

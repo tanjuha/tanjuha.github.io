@@ -1,0 +1,6 @@
+#ulFilter li{
+    list-style: none;
+}
+#ulFilter li .card-text {
+    display: block;
+}
