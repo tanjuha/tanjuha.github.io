@@ -7,8 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="favicon.ico">
     <title>Shapes</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: #17a2b8
+        }
+        .circle div{
+            float: left;
+            shape-outside: circle();
+        }
+        .polygon div{
+            float: left;
+            shape-outside: polygon(30% 0, 100% 70%, 50% 100%, 0 50%);
+            shape-margin: 10px;
+        }
+
+    </style>
 </head>
 <body>
-
+    <h1>Shapes</h1>
+    <a href="https://habr.com/post/190246/">Theory</a>
+    <div class="circle">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 299.998 299.998" style="enable-background:new 0 0 299.998 299.998;" xml:space="preserve" width="200px" height="200px"><g transform="matrix(0.834514 0 0 0.834514 24.8227 24.8227)"><g>	<g>		<path d="M149.997,0C67.157,0,0.001,67.158,0.001,149.995s67.156,150.003,149.995,150.003s150-67.163,150-150.003    S232.836,0,149.997,0z M160.355,168.337c-0.008,0.394-0.067,0.788-0.122,1.183c-0.039,0.296-0.057,0.599-0.124,0.89    c-0.067,0.303-0.182,0.602-0.28,0.905c-0.117,0.366-0.226,0.731-0.379,1.076c-0.029,0.06-0.039,0.124-0.065,0.184    c-0.226,0.482-0.488,0.934-0.775,1.362c-0.018,0.026-0.042,0.052-0.06,0.078c-0.327,0.48-0.7,0.916-1.092,1.325    c-0.109,0.112-0.22,0.213-0.335,0.319c-0.345,0.329-0.708,0.63-1.094,0.905c-0.119,0.086-0.233,0.176-0.358,0.259    c-0.495,0.324-1.014,0.609-1.554,0.843c-0.117,0.052-0.239,0.083-0.358,0.13c-0.456,0.176-0.918,0.322-1.395,0.433    c-0.171,0.041-0.34,0.078-0.514,0.109c-0.612,0.112-1.232,0.189-1.86,0.189c-0.127,0-0.257-0.039-0.384-0.044    c-0.602-0.023-1.198-0.07-1.771-0.192c-0.179-0.039-0.355-0.117-0.534-0.166c-0.534-0.145-1.056-0.306-1.554-0.529    c-0.057-0.029-0.117-0.034-0.174-0.06l-57.515-27.129c-5.182-2.443-7.402-8.626-4.959-13.808    c2.443-5.179,8.626-7.402,13.808-4.959l42.716,20.144V62.249c0-5.729,4.645-10.374,10.374-10.374s10.374,4.645,10.374,10.374    V168.15h0.002C160.373,168.212,160.355,168.274,160.355,168.337z" data-original="#000000" fill="#000000"/>	</g></g></g> </svg>
+        </div>
+        <p >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque fuga neque nesciunt non. Cupiditate eius error laboriosam laudantium modi nobis officiis omnis, provident sed tenetur! Atque corporis dignissimos labore odit provident quo repudiandae voluptates, voluptatibus. Ab distinctio ex magnam suscipit! Doloribus illo in natus necessitatibus, quae reprehenderit saepe. Ab accusantium asperiores atque aut commodi consequatur corporis debitis dolore doloribus eaque eius est eveniet fugiat illum ipsam, iste necessitatibus officia omnis porro quia quo rem reprehenderit saepe sapiente sequi sunt suscipit tempore totam vel voluptatem. Animi aperiam, aut deleniti dignissimos dolor eos eum ex hic necessitatibus nemo porro quibusdam sequi?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut delectus deleniti ducimus expedita facilis, impedit iure magni molestiae omnis pariatur porro quo quod. Ad consectetur culpa inventore minima natus, repellendus sit totam? Asperiores consequatur debitis error fugit harum incidunt nisi odit omnis, quos repudiandae suscipit, temporibus! Accusantium beatae consequatur cupiditate debitis dignissimos, distinctio dolorum ducimus earum excepturi fugit illum ipsam iure laborum libero minima molestias nostrum numquam obcaecati perspiciatis porro provident quisquam quos rerum. Ab atque consectetur corporis cupiditate, dolor, dolorem, eligendi harum laborum molestiae natus numquam odio officiis perferendis porro quidem quis rem saepe sapiente sequi veritatis vitae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquid beatae consequatur cum doloribus eos iste iusto laudantium libero molestiae molestias, numquam officiis optio possimus provident qui quod reiciendis repellendus sed tempora tenetur totam ullam. Deserunt distinctio explicabo modi quas! Beatae commodi et eum eveniet ex fuga, hic id impedit iure laborum nobis perspiciatis, possimus quas qui quidem ratione similique temporibus vitae. A accusamus alias aperiam aspernatur consectetur cumque dolorem eius enim esse ex exercitationem expedita fugit in, ipsa ipsam labore magnam modi molestiae numquam odio, quaerat quidem rem repellendus reprehenderit saepe temporibus vel velit vero voluptate voluptatibus. Aperiam, laudantium?
+        </p>
+    </div>
+    <div class="polygon">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 47.001 47.001" style="enable-background:new 0 0 47.001 47.001;" xml:space="preserve"><g transform="matrix(0.960596 0 0 0.960596 0.926013 0.926013)"><g>	<g id="Layer_1_64_">		<g>			<path d="M22.432,22.429c0,0.591,0.479,1.067,1.068,1.067s1.068-0.479,1.068-1.067c0.001-1.25,0.445-2.465,1.251-3.421     c1.793-2.126,3.137-4.431,3.988-6.851c0.115-0.327,0.065-0.689-0.135-0.972c-0.201-0.283-0.525-0.451-0.872-0.451H18.199     c-0.347,0-0.672,0.168-0.873,0.451c-0.2,0.283-0.25,0.645-0.135,0.972c0.853,2.42,2.195,4.725,3.988,6.851     C21.986,19.964,22.431,21.18,22.432,22.429z" data-original="#000000" class="" fill="#000000"/>            <path d="M24.568,26.71c0-0.59-0.479-1.067-1.068-1.067s-1.068,0.479-1.068,1.067c-0.001,1.542-0.922,3.067-2.593,4.304     c-3.574,2.639-6.249,5.506-7.951,8.52c-0.187,0.332-0.184,0.736,0.009,1.062c0.19,0.329,0.542,0.53,0.922,0.53h21.364     c0.379,0,0.73-0.201,0.922-0.53c0.191-0.326,0.194-0.73,0.008-1.062c-1.701-3.014-4.377-5.881-7.95-8.52     C25.49,29.777,24.569,28.252,24.568,26.71z" data-original="#000000" class="" fill="#000000"/>            <path d="M42.192,42.729h-0.639c-0.734-8.313-5.602-14.695-9.386-19.228c3.785-4.532,8.651-10.915,9.388-19.228h0.639     c1.18,0,2.136-0.957,2.136-2.137C44.33,0.956,43.374,0,42.194,0H4.807c-1.18,0-2.136,0.957-2.136,2.136     c0,1.18,0.956,2.137,2.136,2.137h0.639c0.735,8.314,5.601,14.697,9.386,19.228c-3.784,4.532-8.651,10.914-9.387,19.228H4.807     c-1.18,0-2.136,0.955-2.136,2.135c0,1.181,0.956,2.138,2.136,2.138h2.671h32.044h2.672c1.18,0,2.136-0.957,2.136-2.138     C44.33,43.684,43.373,42.729,42.192,42.729z M9.728,42.729c0.803-7.511,5.686-13.295,9.335-17.617l0.195-0.231     c0.672-0.795,0.672-1.959,0-2.755l-0.194-0.23c-3.648-4.323-8.533-10.107-9.336-17.619h27.544     c-0.803,7.512-5.688,13.296-9.336,17.619l-0.193,0.23c-0.672,0.795-0.672,1.959,0,2.755l0.195,0.231     c3.648,4.322,8.531,10.106,9.334,17.617H9.728z" data-original="#000000" class="" fill="#000000"/>		</g>	</g>    </g></g> </svg>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem error facere fuga hic impedit ipsa ipsum itaque laboriosam laudantium maiores modi molestias mollitia neque numquam odit officia, provident qui reprehenderit sunt ullam ut velit. Architecto consequatur consequuntur debitis earum excepturi ipsum laboriosam modi neque nihil odio quae, reiciendis vero voluptatem? A aliquid amet animi, asperiores aspernatur debitis ducimus earum error hic iusto laborum magnam, maxime minima molestiae molestias nobis non nostrum obcaecati odio officia optio quas quis reprehenderit suscipit vitae voluptas voluptate voluptatum? Accusantium adipisci amet commodi consectetur, consequuntur deleniti dicta esse et illum impedit iusto labore magni minus nemo odio odit optio quaerat quis repellat rerum sequi similique ullam vitae. Adipisci beatae consectetur doloribus exercitationem facere illo illum libero nemo possimus quae quam, quas quia repudiandae sed sint, vel voluptate! Accusantium eveniet itaque laborum repudiandae voluptate. Doloremque illum maxime obcaecati optio quaerat quidem ratione, suscipit voluptatibus. A adipisci, amet aut commodi cum cupiditate doloremque error minus necessitatibus repellendus tempora ut vel voluptatum! Accusantium aliquam corporis cupiditate eos laboriosam reprehenderit repudiandae saepe sapiente veritatis. Aperiam aut consequuntur cumque cupiditate dicta dolor ea, error exercitationem illo illum incidunt itaque nobis, numquam officia porro similique sint suscipit tempore vitae voluptas voluptate.
+        </p>
+    </div>
 </body>
 </html>
