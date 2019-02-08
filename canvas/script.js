@@ -1,9 +1,9 @@
-var canvas, ctx, bollX = 20, boll_X = 5;
+var canvas, ctx, bollX = 20, boll_X = 5,bollY = 20;
 window.onload = function(){
     canvas = document.getElementById('myGame');
     ctx = canvas.getContext('2d');
 
-   setInterval(updateAll, 600/30); // 2000 - 2 seconds
+   setInterval(updateAll, 2000/30); // 2000 - 2 seconds
 
 };
 function updateAll() {
@@ -18,10 +18,10 @@ function updateAll() {
     ctx.beginPath();
     ctx.arc(bollX,150,20, 0,Math.PI*2);
     ctx.fill();
-    if(bollX > 280){
+    if(bollX > canvas.width-20){
         boll_X *=-1;
     }
-    if(bollX < 30){
+    if(bollX < 50){
         boll_X +=1;
     }
 }
