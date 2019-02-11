@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-950">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="1059">
+              <caret line="168" column="6" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -108,16 +108,15 @@
       <option name="presentableId" value="Default" />
       <updated>1546991491588</updated>
       <workItem from="1546991493028" duration="9459000" />
-      <workItem from="1549845751975" duration="2677000" />
+      <workItem from="1549845751975" duration="3048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12136000" />
+    <option name="totallyTimeSpent" value="12507000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -132,7 +131,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -152,8 +151,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="1059">
+          <caret line="168" column="6" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
