@@ -2,7 +2,7 @@ import React from 'react';
 import './item-status-filter.css';
 
 
-const ItemStatusFiter  = () => {
+const ItemStatusFilter  = () => {
     return (
        <div className="btn-group item-status-filter">
             <button type="button" className="btn btn-info">All</button>
@@ -12,4 +12,4 @@ const ItemStatusFiter  = () => {
     );
 };
 
-export default ItemStatusFiter;
+export default ItemStatusFilter;
