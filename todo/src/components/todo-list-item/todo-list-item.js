@@ -4,7 +4,8 @@ import './todo-list-item.css';
 
 export default class TodoListItem extends Component {
     state = {
-        done: false
+        done: false,
+        important: false
     };
 
     onLabelClick = () =>  {
@@ -12,30 +13,37 @@ export default class TodoListItem extends Component {
            done : true
        });
 };
+    onMarkImportant = () => {
+        this.setState({
+            important : true
+        });
+    };
+
     render (){
-        const { label, important = false } = this.props;
-        const { done } = this.state;
+        const { label } = this.props;
+        const { done, important } = this.state;
 
         let classNames = "todo-list-item row";
         if(done){
             classNames += " done";
         }
+        if(important){
+            classNames += " important";
+        }
 
-        const style = {
-            color: important ? 'tomato' : '#000'
-        };
 
         return  (
             <span className={classNames} >
             <span
-                style={ style }
                 className="todo-list-item col-lg-10"
                 onClick={this.onLabelClick}>
 
                 { label }
             </span>
 
-            <button type="button" className="btn btn-info btn-sm">
+            <button type="button"
+                    className="btn btn-info btn-sm"
+                    onClick={this.onMarkImportant}>
                 <i className = "fa fa-exclamation"/>
             </button>
              <button type="button" className="btn btn-danger btn-sm">
