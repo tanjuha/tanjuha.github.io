@@ -3,3 +3,6 @@
     height: 30px;
     margin: 0 1px;
 }
+.done{
+    text-decoration:line-through;
+}
