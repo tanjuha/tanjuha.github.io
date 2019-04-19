@@ -21,7 +21,10 @@ const App = () => {
             <AppHeader toDo = {toDo}  done = {done}  />
             <SearchPanel />
             <ItemStatusFilter />
-            <TodoList todos = {todoData} />
+            <TodoList
+                todos = {todoData}
+                onDeleted ={(id) => console.log('del', id)}
+            />
         </div>
     )
 };
