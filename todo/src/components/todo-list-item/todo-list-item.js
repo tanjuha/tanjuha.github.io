@@ -3,6 +3,11 @@ import './todo-list-item.css';
 
 
 export default class TodoListItem extends Component {
+
+    onLabelClick = () =>  {
+        console.log(`Done: ${this.props.label}`);
+};
+
     render (){
         const { label, important = false } = this.props;
 
@@ -12,7 +17,13 @@ export default class TodoListItem extends Component {
 
         return  (
             <span className="todo-list-item row" >
-            <span style={ style } className="todo-list-item col-lg-10">{ label } </span>
+            <span
+                style={ style }
+                className="todo-list-item col-lg-10"
+                onClick={this.onLabelClick}>
+
+                { label }
+            </span>
 
             <button type="button" className="btn btn-info btn-sm">
                 <i className = "fa fa-exclamation"/>
