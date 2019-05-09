@@ -1,22 +1,24 @@
-body{
+body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-}
-p{
     font-size: 13px;
+}
+
+p {
     margin: 0;
 }
-a{
+
+a {
     display: block;
     margin-bottom: 20px;
     text-decoration: none;
     color: #BEBBBC;
-    font-size: 13px;
 }
-.container{
+
+.container {
     width: auto;
-    height: 1130px;
-    margin:auto;
+    height: auto;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -25,34 +27,38 @@ a{
     -ms-flex-direction: row;
     flex-direction: row;
 }
-    .black,
-    .light{
+
+.black,
+.light {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding-top: 50px;
+    padding: 50px 0;
 }
-.black{
-    width:40%;
+
+.black {
+    width: 40%;
     background: #545657;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
-.light{
-    width:60%;
+
+.light {
+    width: 60%;
     background: #9FA5A5;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
 }
-.info{
+
+.info {
     position: relative;
     width: 350px;
-    height: 700px	;
+    height: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,90 +72,149 @@ a{
     align-items: center;
     background: #2B2B2B;
     color: #BEBBBC;
-    box-shadow: -20px 22px 25px -13px rgba(0,0,0,0.44);
-    -webkit-box-shadow: -20px 22px 25px -13px rgba(0,0,0,0.44);
-    -moz-box-shadow: -20px 22px 25px -13px rgba(0,0,0,0.44);
+    box-shadow: -20px 22px 25px -13px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: -20px 22px 25px -13px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: -20px 22px 25px -13px rgba(0, 0, 0, 0.44);
 }
-.summary{
+
+.summary {
+    position: relative;
     width: 500px;
-    height: 700px	;
+    height: 700px;
     background: #E8E9EB;
     color: #2B2B2B;
     padding: 0 20px;
 }
-span{
-    font-size: 13px;
-}
-.photo{
+
+.photo {
     border-radius: 50%;
     margin: 20px 20px 40px 20px;
 }
-.info:after{
+
+.info:after {
     position: absolute;
     content: '';
     height: 1px;
     width: 150px;
     background: rgba(232, 233, 235, 0.28);
-    top:190px;
+    top: 190px;
 }
-.info p{
-    font-size: 13px;
+
+.info p {
     margin-bottom: 20px;
 }
-.info i{
+
+.info i {
     margin-right: 10px;
 }
-h1{
-    font-size: 40px;
+
+h1 {
+    font-size: 2.5rem;
     font-weight: 400;
 }
-h1 span{
+
+h1 span {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #545657;
 }
-h6{
+
+h6 {
+    font-size: 0.8em;
     margin: 0;
     display: inline-block;
 }
+
 h4 {
-    margin-bottom: 5px ;
+    font-size: 1.3em;
+    margin-bottom: 5px;
 }
+
+.fresh-info {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+}
+
+.mg-b-3 {
+    margin-bottom: 3px;
+}
+
 @media (max-width: 992px) {
-    .container{
+    .container {
         height: auto;
         flex-direction: column;
     }
+
     .black,
-    .light{
+    .light {
         width: 100%;
         padding-top: 30px;
         justify-content: center;
     }
-    .light{
+
+    .light {
         padding-top: 0;
     }
-    .info{
+
+    .info {
         width: 80%;
         height: auto;
         padding-bottom: 30px;
     }
-    .summary{
-        width: calc( 80% - 60px);
+
+    .summary {
+        width: calc( 80% - 60px );
         height: auto;
-        padding: 0 30px 30px    ;
+        padding: 0 30px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 40px;
-        box-shadow: -20px 22px 25px -13px rgba(0,0,0,0.44);
-        -webkit-box-shadow: -20px 22px 25px -13px rgba(0,0,0,0.44);
-        -moz-box-shadow: -20px 22px 25px -13px rgba(0,0,0,0.44);
+        box-shadow: -20px 22px 25px -13px rgba(0, 0, 0, 0.44);
+        -webkit-box-shadow: -20px 22px 25px -13px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -20px 22px 25px -13px rgba(0, 0, 0, 0.44);
     }
-    .photo{
+
+    .photo {
         margin-top: 30px;
     }
-    .info:after{
-        top:200px;
+
+    .info:after {
+        top: 200px;
+    }
+}
+
+@media print {
+    body {
+        font-size: 22px;
+    }
+
+    h1, h1 span {
+        font-size: 60px;
+    }
+
+    .container {
+        height: 990px;
+    }
+
+    .info,
+    .summary {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        margin-left: 50px;
+    }
+
+    .summary {
+        margin-right: 50px;
+    }
+
+    .fresh-info {
+        display: block;
     }
 }
