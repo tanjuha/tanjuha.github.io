@@ -7,7 +7,7 @@ import ItemStatusFilter from '../item-status-filter';
 
 const App = () => {
 
-    const todoData =[
+        const todoData =[
         {label: 'Drink coffee', important: false, id: 1},
         {label: 'Make Awesome App', important: true, id:2},
         {label: 'Have a lunch', important: false,id:3}
