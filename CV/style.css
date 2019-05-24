@@ -10,9 +10,17 @@ p {
 
 a {
     display: block;
-    margin-bottom: 20px;
     text-decoration: none;
     color: #BEBBBC;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin-bottom: 20px
 }
 
 .container {
@@ -100,10 +108,6 @@ a {
     top: 190px;
 }
 
-.info p {
-    margin-bottom: 20px;
-}
-
 .info i {
     margin-right: 10px;
 }
@@ -140,6 +144,15 @@ h4 {
 
 .mg-b-3 {
     margin-bottom: 3px;
+}
+ul li a{
+    position: relative;
+    transition: .5s;
+}
+
+ul li a:hover{
+    color: #D6002E;
+    text-shadow: 0 0 5px #D6002E;
 }
 
 @media (max-width: 992px) {
