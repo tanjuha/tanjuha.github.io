@@ -147,7 +147,6 @@ h4 {
 }
 ul li a{
     position: relative;
-    transition: .5s;
 }
 
 ul li a:hover{
